@@ -1,0 +1,35 @@
+CIF file written using JARVIS-Tools package.
+data_TlI3
+_symmetry_space_group_name_H-M  'Pbam'
+_cell_length_a       9.68998
+_cell_length_b       9.6221
+_cell_length_c       26.6647
+_cell_angle_alpha    90
+_cell_angle_beta     90
+_cell_angle_gamma    90
+
+_symmetry_Int_Tables_number  55
+_chemical_formula_structural  TlI3
+_chemical_formula_sum  Tl2I6
+_cell_volume  2486.163431869215
+_cell_formula_units_Z  2
+loop_
+  _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+ 1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_fract_occupancy
+ I  I1  1  0.14042  0.78223  0.06249  1
+ I  I2  1  0.64042  0.71777  0.06249  1
+ I  I3  1  0.35839  -0.00010  0.06249  1
+ I  I4  1  0.85839  0.50010  0.06249  1
+ I  I5  1  0.57648  0.21751  0.06249  1
+ I  I6  1  0.07648  0.28249  0.06249  1
+ Tl  Tl1  1  0.35863  0.49992  0.06249  1
+ Tl  Tl2  1  0.85863  0.00008  0.06249  1

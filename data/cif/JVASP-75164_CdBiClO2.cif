@@ -1,0 +1,37 @@
+CIF file written using JARVIS-Tools package.
+data_CdBiClO2
+_symmetry_space_group_name_H-M  'P2_1/m'
+_cell_length_a       4.26995
+_cell_length_b       7.54488
+_cell_length_c       25.1249
+_cell_angle_alpha    90.6414
+_cell_angle_beta     90
+_cell_angle_gamma    90
+
+_symmetry_Int_Tables_number  11
+_chemical_formula_structural  CdBiClO2
+_chemical_formula_sum  Cd2Bi2Cl2O4
+_cell_volume  809.3784712144251
+_cell_formula_units_Z  2
+loop_
+  _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+ 1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_fract_occupancy
+ Bi  Bi1  1  0.75000  0.16158  0.54965  1
+ Bi  Bi2  1  0.25000  0.37192  0.45035  1
+ Cd  Cd1  1  0.25000  0.89445  0.46626  1
+ Cd  Cd2  1  0.75000  0.63905  0.53374  1
+ Cl  Cl1  1  0.75000  0.49594  0.62010  1
+ Cl  Cl2  1  0.25000  0.03757  0.37990  1
+ O  O1  1  0.75000  0.91549  0.50379  1
+ O  O2  1  0.25000  0.61802  0.49621  1
+ O  O3  1  0.25000  0.17988  0.51646  1
+ O  O4  1  0.75000  0.35363  0.48354  1

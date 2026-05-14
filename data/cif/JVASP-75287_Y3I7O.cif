@@ -1,0 +1,38 @@
+CIF file written using JARVIS-Tools package.
+data_Y3I7O
+_symmetry_space_group_name_H-M  'P3m1'
+_cell_length_a       8.28301
+_cell_length_b       8.28286
+_cell_length_c       23.6093
+_cell_angle_alpha    89.9947
+_cell_angle_beta     90.0182
+_cell_angle_gamma    59.9991
+
+_symmetry_Int_Tables_number  156
+_chemical_formula_structural  Y3I7O
+_chemical_formula_sum  Y3I7O
+_cell_volume  1402.7413911265062
+_cell_formula_units_Z  1
+loop_
+  _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+ 1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_fract_occupancy
+ I  I1  1  0.33806  0.32838  0.43280  1
+ I  I2  1  0.83232  0.82281  0.42547  1
+ I  I3  1  0.00156  0.49654  0.57953  1
+ I  I4  1  0.50673  0.99146  0.57951  1
+ I  I5  1  0.83241  0.33982  0.42550  1
+ I  I6  1  0.50656  0.49670  0.57951  1
+ I  I7  1  0.34935  0.82270  0.42547  1
+ O  O1  1  0.00487  0.99495  0.53075  1
+ Y  Y1  1  0.70921  0.14286  0.50716  1
+ Y  Y2  1  0.15258  0.69935  0.50715  1
+ Y  Y3  1  0.15271  0.14273  0.50716  1

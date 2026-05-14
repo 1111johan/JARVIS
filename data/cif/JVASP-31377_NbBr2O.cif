@@ -1,0 +1,35 @@
+CIF file written using JARVIS-Tools package.
+data_NbBr2O
+_symmetry_space_group_name_H-M  'Pmm2'
+_cell_length_a       7.04721
+_cell_length_b       3.92401
+_cell_length_c       27.7242
+_cell_angle_alpha    90
+_cell_angle_beta     104.602
+_cell_angle_gamma    90
+
+_symmetry_Int_Tables_number  25
+_chemical_formula_structural  NbBr2O
+_chemical_formula_sum  Nb2Br4O2
+_cell_volume  741.905109642381
+_cell_formula_units_Z  2
+loop_
+  _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+ 1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_fract_occupancy
+ Br  Br1  1  0.07839  0.45578  0.34457  1
+ Br  Br2  1  0.56624  0.44983  0.33235  1
+ Br  Br3  1  0.43376  0.44983  0.19874  1
+ Br  Br4  1  0.92161  0.45578  0.18652  1
+ Nb  Nb1  1  0.78493  0.48614  0.26555  1
+ Nb  Nb2  1  0.21507  0.48614  0.26555  1
+ O  O1  1  0.77881  0.96135  0.26556  1
+ O  O2  1  0.22119  0.96135  0.26553  1

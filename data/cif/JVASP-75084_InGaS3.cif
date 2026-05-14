@@ -1,0 +1,37 @@
+CIF file written using JARVIS-Tools package.
+data_InGaS3
+_symmetry_space_group_name_H-M  'Pmn2_1'
+_cell_length_a       3.78841
+_cell_length_b       6.2291
+_cell_length_c       27.2604
+_cell_angle_alpha    90
+_cell_angle_beta     90
+_cell_angle_gamma    90
+
+_symmetry_Int_Tables_number  31
+_chemical_formula_structural  InGaS3
+_chemical_formula_sum  In2Ga2S6
+_cell_volume  643.3005591507476
+_cell_formula_units_Z  2
+loop_
+  _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+ 1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_fract_occupancy
+ Ga  Ga1  1  0.00000  0.05608  0.40416  1
+ Ga  Ga2  1  0.50000  0.55608  0.59584  1
+ In  In1  1  0.50000  0.50319  0.44022  1
+ In  In2  1  0.00000  0.00319  0.55978  1
+ S  S1  1  0.00000  0.69652  0.39420  1
+ S  S2  1  0.50000  0.19652  0.60580  1
+ S  S3  1  0.00000  0.70690  0.63183  1
+ S  S4  1  0.50000  0.20690  0.36817  1
+ S  S5  1  0.00000  0.24321  0.47915  1
+ S  S6  1  0.50000  0.74321  0.52085  1

@@ -1,0 +1,33 @@
+CIF file written using JARVIS-Tools package.
+data_MgCl2
+_symmetry_space_group_name_H-M  'Cmmm'
+_cell_length_a       7.03957
+_cell_length_b       7.03987
+_cell_length_c       23.4473
+_cell_angle_alpha    90.0162
+_cell_angle_beta     90.0355
+_cell_angle_gamma    65.4312
+
+_symmetry_Int_Tables_number  65
+_chemical_formula_structural  MgCl2
+_chemical_formula_sum  Mg2Cl4
+_cell_volume  1056.7892737053016
+_cell_formula_units_Z  2
+loop_
+  _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+ 1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_fract_occupancy
+ Cl  Cl1  1  0.00031  0.49988  0.57406  1
+ Cl  Cl2  1  0.99969  0.50012  0.42594  1
+ Cl  Cl3  1  -0.00000  -0.00000  0.50000  1
+ Cl  Cl4  1  0.50000  0.50000  0.50000  1
+ Mg  Mg1  1  0.13536  0.63537  0.49999  1
+ Mg  Mg2  1  0.86464  0.36463  0.50001  1

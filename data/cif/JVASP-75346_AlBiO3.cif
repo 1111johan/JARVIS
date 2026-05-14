@@ -1,0 +1,47 @@
+CIF file written using JARVIS-Tools package.
+data_AlBiO3
+_symmetry_space_group_name_H-M  'P2_1/c'
+_cell_length_a       5.00126
+_cell_length_b       8.02396
+_cell_length_c       24.4509
+_cell_angle_alpha    90
+_cell_angle_beta     90
+_cell_angle_gamma    90
+
+_symmetry_Int_Tables_number  14
+_chemical_formula_structural  AlBiO3
+_chemical_formula_sum  Al4Bi4O12
+_cell_volume  981.213784950388
+_cell_formula_units_Z  4
+loop_
+  _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+ 1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_fract_occupancy
+ Al  Al1  1  0.74142  0.53091  0.52574  1
+ Al  Al2  1  0.75858  0.03091  0.52574  1
+ Al  Al3  1  0.24142  0.96909  0.47426  1
+ Al  Al4  1  0.25858  0.46909  0.47426  1
+ Bi  Bi1  1  0.22678  0.21826  0.58051  1
+ Bi  Bi2  1  0.27322  0.71826  0.58051  1
+ Bi  Bi3  1  0.72678  0.28174  0.41949  1
+ Bi  Bi4  1  0.77322  0.78174  0.41949  1
+ O  O1  1  0.55499  0.33966  0.50634  1
+ O  O2  1  0.91127  0.52893  0.45449  1
+ O  O3  1  0.94501  0.83966  0.50634  1
+ O  O4  1  0.64605  0.60125  0.59241  1
+ O  O5  1  0.08873  0.47107  0.54551  1
+ O  O6  1  0.35395  0.39875  0.40759  1
+ O  O7  1  0.85395  0.10125  0.59241  1
+ O  O8  1  0.58873  0.02893  0.45449  1
+ O  O9  1  0.41127  0.97107  0.54551  1
+ O  O10  1  0.05499  0.16034  0.49366  1
+ O  O11  1  0.14605  0.89875  0.40759  1
+ O  O12  1  0.44501  0.66034  0.49366  1

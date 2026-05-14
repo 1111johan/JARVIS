@@ -1,0 +1,43 @@
+CIF file written using JARVIS-Tools package.
+data_RhCl3
+_symmetry_space_group_name_H-M  'C2/m'
+_cell_length_a       6.00616
+_cell_length_b       10.4031
+_cell_length_c       26.2732
+_cell_angle_alpha    90
+_cell_angle_beta     94.368
+_cell_angle_gamma    90
+
+_symmetry_Int_Tables_number  12
+_chemical_formula_structural  RhCl3
+_chemical_formula_sum  Rh4Cl12
+_cell_volume  1636.847709528094
+_cell_formula_units_Z  4
+loop_
+  _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+ 1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_fract_occupancy
+ Cl  Cl1  1  0.08590  0.48394  0.20745  1
+ Cl  Cl2  1  0.08590  0.13424  0.20745  1
+ Cl  Cl3  1  0.06133  0.80909  0.20745  1
+ Cl  Cl4  1  0.58590  0.98393  0.20745  1
+ Cl  Cl5  1  0.58590  0.63424  0.20745  1
+ Cl  Cl6  1  0.56133  0.30909  0.20745  1
+ Cl  Cl7  1  0.22719  0.30909  0.10659  1
+ Cl  Cl8  1  0.20261  0.98393  0.10659  1
+ Cl  Cl9  1  0.20261  0.63424  0.10659  1
+ Cl  Cl10  1  0.72719  0.80909  0.10659  1
+ Cl  Cl11  1  0.70261  0.48394  0.10659  1
+ Cl  Cl12  1  0.70261  0.13424  0.10659  1
+ Rh  Rh1  1  0.89426  0.97576  0.15702  1
+ Rh  Rh2  1  0.89426  0.64242  0.15702  1
+ Rh  Rh3  1  0.39426  0.47576  0.15702  1
+ Rh  Rh4  1  0.39426  0.14242  0.15702  1

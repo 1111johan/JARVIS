@@ -1,0 +1,33 @@
+CIF file written using JARVIS-Tools package.
+data_ZnWO4
+_symmetry_space_group_name_H-M  'P2'
+_cell_length_a       4.56966
+_cell_length_b       4.57026
+_cell_length_c       21.6479
+_cell_angle_alpha    90
+_cell_angle_beta     83.0639
+_cell_angle_gamma    90.0039
+
+_symmetry_Int_Tables_number  3
+_chemical_formula_structural  ZnWO4
+_chemical_formula_sum  ZnWO4
+_cell_volume  448.79757974388923
+_cell_formula_units_Z  1
+loop_
+  _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+ 1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_fract_occupancy
+ O  O1  1  0.72337  0.76635  0.99081  1
+ O  O2  1  0.67064  0.23380  0.08273  1
+ O  O3  1  0.20324  0.76617  0.08272  1
+ O  O4  1  0.25574  0.23371  0.99082  1
+ W  W1  1  0.46323  0.99999  0.03677  1
+ Zn  Zn1  1  0.96317  0.49997  0.03676  1

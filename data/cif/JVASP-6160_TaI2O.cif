@@ -1,0 +1,35 @@
+CIF file written using JARVIS-Tools package.
+data_TaI2O
+_symmetry_space_group_name_H-M  'P2/m'
+_cell_length_a       7.47162
+_cell_length_b       3.89602
+_cell_length_c       26.1729
+_cell_angle_alpha    90
+_cell_angle_beta     124.533
+_cell_angle_gamma    90
+
+_symmetry_Int_Tables_number  10
+_chemical_formula_structural  TaI2O
+_chemical_formula_sum  Ta2I4O2
+_cell_volume  627.6424914007849
+_cell_formula_units_Z  2
+loop_
+  _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+ 1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_fract_occupancy
+ I  I1  1  0.35895  0.57171  0.06572  1
+ I  I2  1  -0.10099  0.57171  0.08589  1
+ I  I3  1  0.78784  0.57171  0.28169  1
+ I  I4  1  0.24778  0.57171  0.26152  1
+ O  O1  1  0.78607  0.07171  0.17371  1
+ O  O2  1  0.36073  0.07171  0.17370  1
+ Ta  Ta1  1  0.77969  0.57171  0.17370  1
+ Ta  Ta2  1  0.36710  0.57171  0.17371  1

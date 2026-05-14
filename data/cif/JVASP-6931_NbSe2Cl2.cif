@@ -1,0 +1,37 @@
+CIF file written using JARVIS-Tools package.
+data_NbSe2Cl2
+_symmetry_space_group_name_H-M  'P-1'
+_cell_length_a       6.36838
+_cell_length_b       6.57864
+_cell_length_c       27.405
+_cell_angle_alpha    83.6589
+_cell_angle_beta     84.3176
+_cell_angle_gamma    61.0496
+
+_symmetry_Int_Tables_number  2
+_chemical_formula_structural  NbSe2Cl2
+_chemical_formula_sum  Nb2Se4Cl4
+_cell_volume  997.1506512645268
+_cell_formula_units_Z  2
+loop_
+  _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+ 1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_fract_occupancy
+ Cl  Cl1  1  0.10110  0.01418  0.22076  1
+ Cl  Cl2  1  0.68061  0.85514  0.22076  1
+ Cl  Cl3  1  0.32816  0.89111  0.11509  1
+ Cl  Cl4  1  0.74865  0.05016  0.11510  1
+ Nb  Nb1  1  0.34437  0.19314  0.16793  1
+ Nb  Nb2  1  0.08488  0.71216  0.16793  1
+ Se  Se1  1  0.91481  0.46461  0.13283  1
+ Se  Se2  1  0.51445  0.44069  0.20302  1
+ Se  Se3  1  0.19738  0.42512  0.24887  1
+ Se  Se4  1  0.23188  0.48017  0.08698  1

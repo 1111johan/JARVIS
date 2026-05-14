@@ -1,0 +1,37 @@
+CIF file written using JARVIS-Tools package.
+data_CrSiTe3
+_symmetry_space_group_name_H-M  'P-31m'
+_cell_length_a       6.82719
+_cell_length_b       6.82719
+_cell_length_c       27.8015
+_cell_angle_alpha    90
+_cell_angle_beta     90
+_cell_angle_gamma    120
+
+_symmetry_Int_Tables_number  162
+_chemical_formula_structural  CrSiTe3
+_chemical_formula_sum  Cr2Si2Te6
+_cell_volume  1122.2331211635167
+_cell_formula_units_Z  2
+loop_
+  _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+ 1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_fract_occupancy
+ Cr  Cr1  1  0.00000  0.00000  0.13670  1
+ Cr  Cr2  1  0.66667  0.33333  0.13668  1
+ Si  Si1  1  0.33333  0.66667  0.09543  1
+ Si  Si2  1  0.33333  0.66667  0.17795  1
+ Te  Te1  1  0.69714  0.66668  0.07432  1
+ Te  Te2  1  0.96954  0.30286  0.07432  1
+ Te  Te3  1  0.33332  0.03046  0.07432  1
+ Te  Te4  1  0.69713  0.03047  0.19906  1
+ Te  Te5  1  0.96953  0.66666  0.19906  1
+ Te  Te6  1  0.33334  0.30287  0.19906  1

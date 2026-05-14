@@ -1,0 +1,35 @@
+CIF file written using JARVIS-Tools package.
+data_TiI3
+_symmetry_space_group_name_H-M  'Pmm2'
+_cell_length_a       6.40714
+_cell_length_b       7.11774
+_cell_length_c       25.3393
+_cell_angle_alpha    90
+_cell_angle_beta     90
+_cell_angle_gamma    90
+
+_symmetry_Int_Tables_number  25
+_chemical_formula_structural  TiI3
+_chemical_formula_sum  Ti2I6
+_cell_volume  1155.5820859724888
+_cell_formula_units_Z  2
+loop_
+  _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+ 1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_fract_occupancy
+ I  I1  1  0.50000  0.58906  0.18349  1
+ I  I2  1  0.00000  0.91123  0.18664  1
+ I  I3  1  0.50000  0.07943  0.26321  1
+ I  I4  1  0.00000  0.43879  0.26321  1
+ I  I5  1  0.00000  0.91123  0.33978  1
+ I  I6  1  0.50000  0.58906  0.34294  1
+ Ti  Ti1  1  0.72904  0.75297  0.26321  1
+ Ti  Ti2  1  0.27096  0.75297  0.26321  1

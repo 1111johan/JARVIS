@@ -1,0 +1,47 @@
+CIF file written using JARVIS-Tools package.
+data_Nb3GeTe6
+_symmetry_space_group_name_H-M  'Pmc2_1'
+_cell_length_a       6.53296
+_cell_length_b       11.6872
+_cell_length_c       26.9139
+_cell_angle_alpha    90
+_cell_angle_beta     90
+_cell_angle_gamma    90
+
+_symmetry_Int_Tables_number  26
+_chemical_formula_structural  Nb3GeTe6
+_chemical_formula_sum  Nb6Ge2Te12
+_cell_volume  2054.927367500981
+_cell_formula_units_Z  2
+loop_
+  _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+ 1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_fract_occupancy
+ Ge  Ge1  1  0.42487  0.57520  0.13853  1
+ Ge  Ge2  1  0.92487  0.92480  0.13853  1
+ Nb  Nb1  1  0.32680  0.33353  0.13853  1
+ Nb  Nb2  1  0.03639  0.68531  0.13853  1
+ Nb  Nb3  1  0.80258  0.46838  0.13853  1
+ Nb  Nb4  1  0.30258  0.03162  0.13853  1
+ Nb  Nb5  1  0.53639  0.81469  0.13853  1
+ Nb  Nb6  1  0.82680  0.16647  0.13853  1
+ Te  Te1  1  0.14538  0.18139  0.06799  1
+ Te  Te2  1  0.64538  0.31861  0.20907  1
+ Te  Te3  1  0.21584  0.83919  0.06801  1
+ Te  Te4  1  0.71584  0.66081  0.06801  1
+ Te  Te5  1  0.64538  0.31861  0.06799  1
+ Te  Te6  1  0.21584  0.83919  0.20906  1
+ Te  Te7  1  0.13513  0.49256  0.20728  1
+ Te  Te8  1  0.63513  0.00744  0.20728  1
+ Te  Te9  1  0.13513  0.49256  0.06979  1
+ Te  Te10  1  0.71584  0.66081  0.20906  1
+ Te  Te11  1  0.63513  0.00744  0.06979  1
+ Te  Te12  1  0.14538  0.18139  0.20907  1

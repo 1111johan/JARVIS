@@ -1,0 +1,39 @@
+CIF file written using JARVIS-Tools package.
+data_TlTe3Pt2
+_symmetry_space_group_name_H-M  'P-3m1'
+_cell_length_a       7.94904
+_cell_length_b       7.94904
+_cell_length_c       26.0606
+_cell_angle_alpha    90
+_cell_angle_beta     90
+_cell_angle_gamma    120
+
+_symmetry_Int_Tables_number  164
+_chemical_formula_structural  TlTe3Pt2
+_chemical_formula_sum  Tl2Te6Pt4
+_cell_volume  1426.0836713771134
+_cell_formula_units_Z  2
+loop_
+  _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+ 1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_fract_occupancy
+ Pt  Pt1  1  0.59240  0.43367  0.11628  1
+ Pt  Pt2  1  0.59240  0.93367  0.11628  1
+ Pt  Pt3  1  0.09240  0.43367  0.11628  1
+ Pt  Pt4  1  0.09240  0.93367  0.11628  1
+ Te  Te1  1  0.42343  0.60265  0.16962  1
+ Te  Te2  1  0.42343  0.09571  0.16962  1
+ Te  Te3  1  0.93036  0.60265  0.16962  1
+ Te  Te4  1  0.25445  0.26469  0.06294  1
+ Te  Te5  1  0.76138  0.26469  0.06294  1
+ Te  Te6  1  0.76138  0.77163  0.06294  1
+ Tl  Tl1  1  0.92574  0.10034  0.18895  1
+ Tl  Tl2  1  0.25907  0.76700  0.04361  1

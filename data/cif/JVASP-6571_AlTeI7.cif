@@ -1,0 +1,36 @@
+CIF file written using JARVIS-Tools package.
+data_AlTeI7
+_symmetry_space_group_name_H-M  'P1'
+_cell_length_a       7.21517
+_cell_length_b       6.92521
+_cell_length_c       28.8611
+_cell_angle_alpha    90
+_cell_angle_beta     105.749
+_cell_angle_gamma    87.0189
+
+_symmetry_Int_Tables_number  1
+_chemical_formula_structural  AlTeI7
+_chemical_formula_sum  AlTeI7
+_cell_volume  1385.9236392189362
+_cell_formula_units_Z  1
+loop_
+  _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+ 1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_fract_occupancy
+ Al  Al1  1  0.69714  0.00574  0.19815  1
+ I  I1  1  0.44792  0.91243  0.12403  1
+ I  I2  1  0.70175  0.37839  0.19825  1
+ I  I3  1  0.03814  0.85629  0.20178  1
+ I  I4  1  0.62043  0.88625  0.27612  1
+ I  I5  1  0.30895  0.33606  0.28082  1
+ I  I6  1  0.88958  0.36294  0.35885  1
+ I  I7  1  0.22785  0.82845  0.35815  1
+ Te  Te1  1  0.00614  0.58125  0.29133  1

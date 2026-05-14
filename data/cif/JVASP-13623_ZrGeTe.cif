@@ -1,0 +1,33 @@
+CIF file written using JARVIS-Tools package.
+data_ZrGeTe
+_symmetry_space_group_name_H-M  'P4/nmm'
+_cell_length_a       3.76986
+_cell_length_b       3.76986
+_cell_length_c       29.3004
+_cell_angle_alpha    90
+_cell_angle_beta     90
+_cell_angle_gamma    90
+
+_symmetry_Int_Tables_number  129
+_chemical_formula_structural  ZrGeTe
+_chemical_formula_sum  Zr2Ge2Te2
+_cell_volume  416.41158942376325
+_cell_formula_units_Z  2
+loop_
+  _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+ 1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_fract_occupancy
+ Ge  Ge1  1  0.71606  0.71606  0.15871  1
+ Ge  Ge2  1  0.21607  0.21607  0.15871  1
+ Te  Te1  1  0.71606  0.21607  0.27858  1
+ Te  Te2  1  0.21607  0.71606  0.03883  1
+ Zr  Zr1  1  0.21607  0.71606  0.23291  1
+ Zr  Zr2  1  0.71606  0.21607  0.08450  1

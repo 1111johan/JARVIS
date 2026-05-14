@@ -1,0 +1,33 @@
+CIF file written using JARVIS-Tools package.
+data_ZrTiTe4
+_symmetry_space_group_name_H-M  'P2/m'
+_cell_length_a       6.71806
+_cell_length_b       3.87119
+_cell_length_c       26.9428
+_cell_angle_alpha    90
+_cell_angle_beta     90.0329
+_cell_angle_gamma    90
+
+_symmetry_Int_Tables_number  10
+_chemical_formula_structural  ZrTiTe4
+_chemical_formula_sum  ZrTiTe4
+_cell_volume  700.6991883383678
+_cell_formula_units_Z  1
+loop_
+  _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+ 1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_fract_occupancy
+ Te  Te1  1  0.17344  0.89418  0.19358  1
+ Te  Te2  1  0.69434  0.39418  0.19575  1
+ Te  Te3  1  0.33978  0.39418  0.06251  1
+ Te  Te4  1  0.86068  0.89418  0.06468  1
+ Ti  Ti1  1  0.01706  0.39418  0.12913  1
+ Zr  Zr1  1  0.51706  0.89418  0.12913  1

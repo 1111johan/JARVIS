@@ -1,0 +1,37 @@
+CIF file written using JARVIS-Tools package.
+data_TaI2Cl2
+_symmetry_space_group_name_H-M  'Pmmm'
+_cell_length_a       7.5279
+_cell_length_b       8.16515
+_cell_length_c       30.8373
+_cell_angle_alpha    90
+_cell_angle_beta     90
+_cell_angle_gamma    90
+
+_symmetry_Int_Tables_number  47
+_chemical_formula_structural  TaI2Cl2
+_chemical_formula_sum  Ta2I4Cl4
+_cell_volume  1895.4561106901335
+_cell_formula_units_Z  2
+loop_
+  _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+ 1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_fract_occupancy
+ Cl  Cl1  1  0.76913  0.78285  0.17572  1
+ Cl  Cl2  1  0.76913  0.21715  0.17572  1
+ Cl  Cl3  1  0.23087  0.78285  0.17572  1
+ Cl  Cl4  1  0.23087  0.21715  0.17572  1
+ I  I1  1  0.00000  0.50000  0.10120  1
+ I  I2  1  0.50000  0.50000  0.11343  1
+ I  I3  1  0.50000  0.50000  0.23801  1
+ I  I4  1  0.00000  0.50000  0.25024  1
+ Ta  Ta1  1  0.20950  0.50000  0.17572  1
+ Ta  Ta2  1  0.79050  0.50000  0.17572  1

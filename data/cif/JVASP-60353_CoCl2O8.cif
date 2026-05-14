@@ -1,0 +1,38 @@
+CIF file written using JARVIS-Tools package.
+data_CoCl2O8
+_symmetry_space_group_name_H-M  'P-3'
+_cell_length_a       4.75721
+_cell_length_b       4.75722
+_cell_length_c       26.3562
+_cell_angle_alpha    90
+_cell_angle_beta     90
+_cell_angle_gamma    120
+
+_symmetry_Int_Tables_number  147
+_chemical_formula_structural  CoCl2O8
+_chemical_formula_sum  CoCl2O8
+_cell_volume  516.5572731497745
+_cell_formula_units_Z  1
+loop_
+  _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+ 1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_fract_occupancy
+ Cl  Cl1  1  0.33333  0.66667  0.81234  1
+ Cl  Cl2  1  0.66667  0.33333  0.94650  1
+ Co  Co1  1  0.00000  0.00000  0.87942  1
+ O  O1  1  0.62963  0.67832  0.83227  1
+ O  O2  1  0.95131  0.62963  0.92657  1
+ O  O3  1  0.67832  0.04869  0.92657  1
+ O  O4  1  0.37037  0.32168  0.92657  1
+ O  O5  1  0.04869  0.37037  0.83227  1
+ O  O6  1  0.32168  0.95131  0.83227  1
+ O  O7  1  0.33333  0.66667  0.75874  1
+ O  O8  1  0.66667  0.33333  0.00009  1

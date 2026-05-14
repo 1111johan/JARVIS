@@ -1,0 +1,39 @@
+CIF file written using JARVIS-Tools package.
+data_BaH2O3
+_symmetry_space_group_name_H-M  'Pmc2_1'
+_cell_length_a       3.91322
+_cell_length_b       6.27749
+_cell_length_c       25.7952
+_cell_angle_alpha    90
+_cell_angle_beta     90
+_cell_angle_gamma    89.9997
+
+_symmetry_Int_Tables_number  26
+_chemical_formula_structural  BaH2O3
+_chemical_formula_sum  Ba2H4O6
+_cell_volume  633.6656743328369
+_cell_formula_units_Z  2
+loop_
+  _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+ 1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_fract_occupancy
+ Ba  Ba1  1  -0.00033  0.73193  0.45906  1
+ Ba  Ba2  1  0.99959  0.23194  0.54094  1
+ H  H1  1  0.20516  0.70538  0.57526  1
+ H  H2  1  0.79378  0.70536  0.57525  1
+ H  H3  1  0.79409  0.20538  0.42474  1
+ H  H4  1  0.20548  0.20536  0.42475  1
+ O  O1  1  0.99948  0.80202  0.56951  1
+ O  O2  1  -0.00022  0.30202  0.43049  1
+ O  O3  1  0.49970  0.01648  0.42890  1
+ O  O4  1  0.49956  0.51648  0.57110  1
+ O  O5  1  0.49959  0.49143  0.51264  1
+ O  O6  1  0.49966  0.99142  0.48736  1

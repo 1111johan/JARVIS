@@ -1,0 +1,41 @@
+CIF file written using JARVIS-Tools package.
+data_Ge3Sb2O9
+_symmetry_space_group_name_H-M  'P-6'
+_cell_length_a       7.21096
+_cell_length_b       7.21096
+_cell_length_c       25.093
+_cell_angle_alpha    90
+_cell_angle_beta     90
+_cell_angle_gamma    120
+
+_symmetry_Int_Tables_number  174
+_chemical_formula_structural  Ge3Sb2O9
+_chemical_formula_sum  Ge3Sb2O9
+_cell_volume  1129.9773517536817
+_cell_formula_units_Z  1
+loop_
+  _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+ 1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_fract_occupancy
+ Ge  Ge1  1  0.21646  0.93446  0.89852  1
+ Ge  Ge2  1  0.71800  0.78354  0.89852  1
+ Ge  Ge3  1  0.06554  0.28199  0.89852  1
+ O  O1  1  0.33559  0.90648  0.95724  1
+ O  O2  1  0.33559  0.90648  0.83979  1
+ O  O3  1  0.93848  0.73941  0.89852  1
+ O  O4  1  0.26059  0.19907  0.89852  1
+ O  O5  1  0.57089  0.66441  0.95724  1
+ O  O6  1  0.09352  0.42911  0.95724  1
+ O  O7  1  0.09352  0.42911  0.83979  1
+ O  O8  1  0.57089  0.66441  0.83979  1
+ O  O9  1  0.80093  0.06152  0.89852  1
+ Sb  Sb1  1  0.33333  0.66667  0.99548  1
+ Sb  Sb2  1  0.33333  0.66667  0.80156  1

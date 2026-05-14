@@ -1,0 +1,39 @@
+CIF file written using JARVIS-Tools package.
+data_HfTe5
+_symmetry_space_group_name_H-M  'Pmmn'
+_cell_length_a       4.00963
+_cell_length_b       13.8963
+_cell_length_c       25.8543
+_cell_angle_alpha    90
+_cell_angle_beta     90
+_cell_angle_gamma    90
+
+_symmetry_Int_Tables_number  59
+_chemical_formula_structural  HfTe5
+_chemical_formula_sum  Hf2Te10
+_cell_volume  1440.5769744795214
+_cell_formula_units_Z  2
+loop_
+  _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+ 1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_fract_occupancy
+ Hf  Hf1  1  0.50000  0.25000  0.11693  1
+ Hf  Hf2  1  0.00000  0.75000  0.18968  1
+ Te  Te1  1  0.00000  0.35042  0.05246  1
+ Te  Te2  1  0.00000  0.14958  0.05246  1
+ Te  Te3  1  0.50000  0.75000  0.10381  1
+ Te  Te4  1  0.00000  0.56582  0.13004  1
+ Te  Te5  1  0.00000  0.93418  0.13004  1
+ Te  Te6  1  0.50000  0.43418  0.17657  1
+ Te  Te7  1  0.50000  0.06582  0.17657  1
+ Te  Te8  1  0.00000  0.25000  0.20280  1
+ Te  Te9  1  0.50000  0.64958  0.25415  1
+ Te  Te10  1  0.50000  0.85042  0.25415  1

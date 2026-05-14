@@ -1,0 +1,39 @@
+CIF file written using JARVIS-Tools package.
+data_SiAs2
+_symmetry_space_group_name_H-M  'Pmc2_1'
+_cell_length_a       3.69043
+_cell_length_b       10.364
+_cell_length_c       26.206
+_cell_angle_alpha    90
+_cell_angle_beta     90
+_cell_angle_gamma    90
+
+_symmetry_Int_Tables_number  26
+_chemical_formula_structural  SiAs2
+_chemical_formula_sum  Si4As8
+_cell_volume  1002.3199384559687
+_cell_formula_units_Z  4
+loop_
+  _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+ 1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_fract_occupancy
+ As  As1  1  0.50000  0.89114  0.19387  1
+ As  As2  1  0.50000  0.94779  0.03604  1
+ As  As3  1  0.00000  0.65629  0.08898  1
+ As  As4  1  0.00000  0.76146  0.23404  1
+ As  As5  1  0.00000  0.26146  0.00277  1
+ As  As6  1  0.00000  0.15629  0.14784  1
+ As  As7  1  0.50000  0.44779  0.20077  1
+ As  As8  1  0.50000  0.39114  0.04295  1
+ Si  Si1  1  0.50000  0.79921  0.10686  1
+ Si  Si2  1  0.00000  0.08201  0.06124  1
+ Si  Si3  1  0.00000  0.58201  0.17557  1
+ Si  Si4  1  0.50000  0.29921  0.12996  1

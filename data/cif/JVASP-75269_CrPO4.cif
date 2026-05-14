@@ -1,0 +1,39 @@
+CIF file written using JARVIS-Tools package.
+data_CrPO4
+_symmetry_space_group_name_H-M  'C2/m'
+_cell_length_a       4.727
+_cell_length_b       4.727
+_cell_length_c       26.508
+_cell_angle_alpha    90.1265
+_cell_angle_beta     90.1266
+_cell_angle_gamma    101.801
+
+_symmetry_Int_Tables_number  12
+_chemical_formula_structural  CrPO4
+_chemical_formula_sum  Cr2P2O8
+_cell_volume  579.7864800341285
+_cell_formula_units_Z  2
+loop_
+  _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+ 1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_fract_occupancy
+ Cr  Cr1  1  0.66337  0.83663  0.50000  1
+ Cr  Cr2  1  0.16337  0.33663  0.50000  1
+ O  O1  1  0.97157  0.00855  0.45130  1
+ O  O2  1  0.99289  0.66614  0.62250  1
+ O  O3  1  0.35518  0.66470  0.54870  1
+ O  O4  1  0.46989  0.14314  0.47382  1
+ O  O5  1  0.33386  0.00711  0.37750  1
+ O  O6  1  0.99145  0.02843  0.54870  1
+ O  O7  1  0.33530  0.64482  0.45130  1
+ O  O8  1  0.85686  0.53011  0.52618  1
+ P  P1  1  0.05475  0.72800  0.56962  1
+ P  P2  1  0.27200  0.94525  0.43038  1

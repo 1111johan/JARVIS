@@ -1,0 +1,33 @@
+CIF file written using JARVIS-Tools package.
+data_NdIO
+_symmetry_space_group_name_H-M  'P4/nmm'
+_cell_length_a       4.07566
+_cell_length_b       4.07566
+_cell_length_c       29.6295
+_cell_angle_alpha    90
+_cell_angle_beta     90
+_cell_angle_gamma    90
+
+_symmetry_Int_Tables_number  129
+_chemical_formula_structural  NdIO
+_chemical_formula_sum  Nd2I2O2
+_cell_volume  492.17590546974037
+_cell_formula_units_Z  2
+loop_
+  _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+ 1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_fract_occupancy
+ I  I1  1  0.17865  0.67865  0.26618  1
+ I  I2  1  0.67865  0.17865  0.05882  1
+ Nd  Nd1  1  0.67865  0.17865  0.20220  1
+ Nd  Nd2  1  0.17865  0.67865  0.12280  1
+ O  O1  1  0.67865  0.67865  0.16250  1
+ O  O2  1  0.17865  0.17865  0.16250  1

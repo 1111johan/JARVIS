@@ -1,0 +1,33 @@
+CIF file written using JARVIS-Tools package.
+data_DyBC
+_symmetry_space_group_name_H-M  'P2/m'
+_cell_length_a       3.50694
+_cell_length_b       3.4957
+_cell_length_c       29.6743
+_cell_angle_alpha    90
+_cell_angle_beta     102.1
+_cell_angle_gamma    90
+
+_symmetry_Int_Tables_number  10
+_chemical_formula_structural  DyBC
+_chemical_formula_sum  Dy2B2C2
+_cell_volume  355.7004365575801
+_cell_formula_units_Z  2
+loop_
+  _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+ 1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_fract_occupancy
+ B  B1  1  0.68599  0.50000  0.14361  1
+ B  B2  1  0.44392  0.50000  0.18579  1
+ C  C1  1  0.63213  0.50000  0.09371  1
+ C  C2  1  0.49778  0.50000  0.23569  1
+ Dy  Dy1  1  0.14215  0.00000  0.10141  1
+ Dy  Dy2  1  0.98776  0.00000  0.22799  1

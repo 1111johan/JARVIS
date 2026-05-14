@@ -1,0 +1,33 @@
+CIF file written using JARVIS-Tools package.
+data_Te2Mo
+_symmetry_space_group_name_H-M  'P2_1/m'
+_cell_length_a       6.35942
+_cell_length_b       3.47733
+_cell_length_c       35.5403
+_cell_angle_alpha    90
+_cell_angle_beta     91.0433
+_cell_angle_gamma    90
+
+_symmetry_Int_Tables_number  11
+_chemical_formula_structural  Te2Mo
+_chemical_formula_sum  Te4Mo2
+_cell_volume  785.8013604582613
+_cell_formula_units_Z  2
+loop_
+  _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+ 1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_fract_occupancy
+ Mo  Mo1  1  0.29092  0.25000  0.22128  1
+ Mo  Mo2  1  0.65181  0.75000  0.21588  1
+ Te  Te1  1  0.54455  0.25000  0.16020  1
+ Te  Te2  1  0.39817  0.75000  0.27697  1
+ Te  Te3  1  0.03847  0.75000  0.17651  1
+ Te  Te4  1  0.90426  0.25000  0.26066  1

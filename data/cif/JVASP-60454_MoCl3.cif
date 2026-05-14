@@ -1,0 +1,35 @@
+CIF file written using JARVIS-Tools package.
+data_MoCl3
+_symmetry_space_group_name_H-M  'C2/m'
+_cell_length_a       5.71767
+_cell_length_b       5.71767
+_cell_length_c       23.3042
+_cell_angle_alpha    89.9045
+_cell_angle_beta     89.9045
+_cell_angle_gamma    115.278
+
+_symmetry_Int_Tables_number  12
+_chemical_formula_structural  MoCl3
+_chemical_formula_sum  Mo2Cl6
+_cell_volume  688.9023663228222
+_cell_formula_units_Z  2
+loop_
+  _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+ 1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_fract_occupancy
+ Cl  Cl1  1  0.67388  0.66815  0.01395  1
+ Cl  Cl2  1  0.99257  0.66540  0.12783  1
+ Cl  Cl3  1  0.33185  0.32612  0.12783  1
+ Cl  Cl4  1  0.00151  0.33506  0.99701  1
+ Cl  Cl5  1  0.33460  0.00743  0.01395  1
+ Cl  Cl6  1  0.66494  -0.00151  0.14477  1
+ Mo  Mo1  1  0.69983  0.30017  0.07089  1
+ Mo  Mo2  1  0.96663  0.03337  0.07089  1

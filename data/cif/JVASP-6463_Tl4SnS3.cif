@@ -1,0 +1,43 @@
+CIF file written using JARVIS-Tools package.
+data_Tl4SnS3
+_symmetry_space_group_name_H-M  'P42_12'
+_cell_length_a       8.01198
+_cell_length_b       8.01198
+_cell_length_c       26.5114
+_cell_angle_alpha    90
+_cell_angle_beta     90
+_cell_angle_gamma    90
+
+_symmetry_Int_Tables_number  90
+_chemical_formula_structural  Tl4SnS3
+_chemical_formula_sum  Tl8Sn2S6
+_cell_volume  1701.8163081557968
+_cell_formula_units_Z  2
+loop_
+  _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+ 1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_fract_occupancy
+ S  S1  1  0.75000  0.75000  0.04775  1
+ S  S2  1  0.91715  0.41715  0.13684  1
+ S  S3  1  0.58285  0.08285  0.13684  1
+ S  S4  1  0.41715  0.58285  0.13684  1
+ S  S5  1  0.08285  0.91715  0.13684  1
+ S  S6  1  0.25000  0.25000  0.22593  1
+ Sn  Sn1  1  0.25000  0.25000  0.13032  1
+ Sn  Sn2  1  0.75000  0.75000  0.14336  1
+ Tl  Tl1  1  0.40861  0.89326  0.05878  1
+ Tl  Tl2  1  0.89326  0.09139  0.05878  1
+ Tl  Tl3  1  0.09139  0.60674  0.05878  1
+ Tl  Tl4  1  0.60674  0.40861  0.05878  1
+ Tl  Tl5  1  0.90861  0.10674  0.21491  1
+ Tl  Tl6  1  0.39326  0.90861  0.21491  1
+ Tl  Tl7  1  0.59139  0.39326  0.21491  1
+ Tl  Tl8  1  0.10674  0.59139  0.21491  1

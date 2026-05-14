@@ -1,0 +1,33 @@
+CIF file written using JARVIS-Tools package.
+data_KMgSb
+_symmetry_space_group_name_H-M  'P4/nmm'
+_cell_length_a       4.73829
+_cell_length_b       4.73829
+_cell_length_c       28.3559
+_cell_angle_alpha    90
+_cell_angle_beta     90
+_cell_angle_gamma    90
+
+_symmetry_Int_Tables_number  129
+_chemical_formula_structural  KMgSb
+_chemical_formula_sum  K2Mg2Sb2
+_cell_volume  636.6291107291015
+_cell_formula_units_Z  2
+loop_
+  _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+ 1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_fract_occupancy
+ K  K1  1  0.86227  0.36227  0.25129  1
+ K  K2  1  0.36227  0.86227  0.04339  1
+ Mg  Mg1  1  0.86227  0.86227  0.14734  1
+ Mg  Mg2  1  0.36227  0.36227  0.14734  1
+ Sb  Sb1  1  0.36227  0.86227  0.20778  1
+ Sb  Sb2  1  0.86227  0.36227  0.08690  1

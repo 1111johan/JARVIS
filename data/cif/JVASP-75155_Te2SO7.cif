@@ -1,0 +1,47 @@
+CIF file written using JARVIS-Tools package.
+data_Te2SO7
+_symmetry_space_group_name_H-M  'Pmn2_1'
+_cell_length_a       4.65051
+_cell_length_b       8.88591
+_cell_length_c       28.8528
+_cell_angle_alpha    90
+_cell_angle_beta     90
+_cell_angle_gamma    90
+
+_symmetry_Int_Tables_number  31
+_chemical_formula_structural  Te2SO7
+_chemical_formula_sum  Te4S2O14
+_cell_volume  1192.313058342018
+_cell_formula_units_Z  2
+loop_
+  _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+ 1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_fract_occupancy
+ O  O1  1  0.50321  0.86209  0.60592  1
+ O  O2  1  0.33048  0.50000  0.34366  1
+ O  O3  1  0.83048  0.00000  0.65634  1
+ O  O4  1  0.08044  0.78758  0.47814  1
+ O  O5  1  0.36365  0.00000  0.52121  1
+ O  O6  1  0.58044  0.28758  0.52186  1
+ O  O7  1  0.58044  0.71242  0.52186  1
+ O  O8  1  0.00321  0.36209  0.39408  1
+ O  O9  1  0.50321  0.13791  0.60592  1
+ O  O10  1  0.86365  0.50000  0.47879  1
+ O  O11  1  0.00321  0.63791  0.39408  1
+ O  O12  1  0.89989  0.00000  0.57185  1
+ O  O13  1  0.39989  0.50000  0.42815  1
+ O  O14  1  0.08044  0.21242  0.47814  1
+ S  S1  1  0.68777  0.00000  0.61288  1
+ S  S2  1  0.18777  0.50000  0.38712  1
+ Te  Te1  1  0.73111  0.30479  0.45585  1
+ Te  Te2  1  0.23111  0.19521  0.54415  1
+ Te  Te3  1  0.23111  0.80479  0.54415  1
+ Te  Te4  1  0.73111  0.69521  0.45585  1

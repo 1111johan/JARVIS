@@ -1,0 +1,45 @@
+CIF file written using JARVIS-Tools package.
+data_HS7N
+_symmetry_space_group_name_H-M  'Pmc2_1'
+_cell_length_a       7.35285
+_cell_length_b       7.94221
+_cell_length_c       28.853
+_cell_angle_alpha    90
+_cell_angle_beta     90
+_cell_angle_gamma    90
+
+_symmetry_Int_Tables_number  26
+_chemical_formula_structural  HS7N
+_chemical_formula_sum  H2S14N2
+_cell_volume  1684.9589668629355
+_cell_formula_units_Z  2
+loop_
+  _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+ 1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_fract_occupancy
+ H  H1  1  0.21146  0.41062  0.12003  1
+ H  H2  1  0.28854  0.91062  0.12003  1
+ N  N1  1  0.28283  0.78109  0.12003  1
+ N  N2  1  0.21717  0.28109  0.12003  1
+ S  S1  1  0.84475  0.51223  0.17819  1
+ S  S2  1  0.65525  0.01223  0.17819  1
+ S  S3  1  0.23276  0.18441  0.17149  1
+ S  S4  1  0.26724  0.68441  0.17149  1
+ S  S5  1  0.00720  0.71369  0.19831  1
+ S  S6  1  0.70152  0.58601  0.12003  1
+ S  S7  1  0.23276  0.18441  0.06858  1
+ S  S8  1  0.26724  0.68441  0.06858  1
+ S  S9  1  0.65525  0.01223  0.06187  1
+ S  S10  1  0.84475  0.51223  0.06187  1
+ S  S11  1  0.49280  0.21369  0.04175  1
+ S  S12  1  0.00720  0.71369  0.04175  1
+ S  S13  1  0.49280  0.21369  0.19831  1
+ S  S14  1  0.79848  0.08601  0.12003  1

@@ -1,0 +1,37 @@
+CIF file written using JARVIS-Tools package.
+data_CrGeTe3
+_symmetry_space_group_name_H-M  'P-31m'
+_cell_length_a       6.89864
+_cell_length_b       6.89864
+_cell_length_c       23.4446
+_cell_angle_alpha    90
+_cell_angle_beta     90
+_cell_angle_gamma    120
+
+_symmetry_Int_Tables_number  162
+_chemical_formula_structural  CrGeTe3
+_chemical_formula_sum  Cr2Ge2Te6
+_cell_volume  966.2762522135178
+_cell_formula_units_Z  2
+loop_
+  _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+ 1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_fract_occupancy
+ Cr  Cr1  1  0.66667  0.33333  0.07346  1
+ Cr  Cr2  1  0.33333  0.66667  0.07346  1
+ Ge  Ge1  1  0.00000  0.00000  0.12505  1
+ Ge  Ge2  1  0.00000  0.00000  0.02188  1
+ Te  Te1  1  0.37371  0.37371  0.14728  1
+ Te  Te2  1  -0.00000  0.62629  0.14728  1
+ Te  Te3  1  0.62629  0.00000  0.14728  1
+ Te  Te4  1  0.62629  0.62629  0.99964  1
+ Te  Te5  1  0.00000  0.37371  0.99964  1
+ Te  Te6  1  0.37371  -0.00000  0.99964  1

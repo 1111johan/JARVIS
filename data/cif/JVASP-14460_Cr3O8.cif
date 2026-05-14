@@ -1,0 +1,38 @@
+CIF file written using JARVIS-Tools package.
+data_Cr3O8
+_symmetry_space_group_name_H-M  'P-3m1'
+_cell_length_a       5.63049
+_cell_length_b       5.63049
+_cell_length_c       9.75126
+_cell_angle_alpha    90
+_cell_angle_beta     90
+_cell_angle_gamma    120
+
+_symmetry_Int_Tables_number  164
+_chemical_formula_structural  Cr3O8
+_chemical_formula_sum  Cr3O8
+_cell_volume  267.7220177332863
+_cell_formula_units_Z  1
+loop_
+  _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+ 1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_fract_occupancy
+ Cr  Cr1  1  0.33334  0.16667  0.25046  1
+ Cr  Cr2  1  0.83333  0.66666  0.25046  1
+ Cr  Cr3  1  0.83333  0.16667  0.25046  1
+ O  O1  1  0.66667  0.33333  0.14321  1
+ O  O2  1  0.15178  0.30356  0.15438  1
+ O  O3  1  0.15178  0.84822  0.15438  1
+ O  O4  1  0.69644  0.84822  0.15438  1
+ O  O5  1  0.97022  0.48511  0.34656  1
+ O  O6  1  0.51489  0.02978  0.34656  1
+ O  O7  1  0.51489  0.48511  0.34656  1
+ O  O8  1  0.00000  0.00000  0.35772  1

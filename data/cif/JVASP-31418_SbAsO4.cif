@@ -1,0 +1,39 @@
+CIF file written using JARVIS-Tools package.
+data_SbAsO4
+_symmetry_space_group_name_H-M  'P2_1/m'
+_cell_length_a       4.76354
+_cell_length_b       7.09132
+_cell_length_c       25.6379
+_cell_angle_alpha    90
+_cell_angle_beta     91.3493
+_cell_angle_gamma    90
+
+_symmetry_Int_Tables_number  11
+_chemical_formula_structural  SbAsO4
+_chemical_formula_sum  Sb2As2O8
+_cell_volume  865.8030964864128
+_cell_formula_units_Z  2
+loop_
+  _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+ 1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_fract_occupancy
+ As  As1  1  0.22615  0.14846  0.14910  1
+ As  As2  1  0.81685  0.64846  0.09504  1
+ O  O1  1  0.86543  0.14846  0.13401  1
+ O  O2  1  0.70207  0.64846  0.15994  1
+ O  O3  1  0.31100  0.95349  0.18418  1
+ O  O4  1  0.31100  0.34343  0.18418  1
+ O  O5  1  0.73200  0.45349  0.05996  1
+ O  O6  1  0.73200  0.84343  0.05996  1
+ O  O7  1  0.34092  0.14846  0.08420  1
+ O  O8  1  0.17757  0.64846  0.11013  1
+ Sb  Sb1  1  0.30203  0.64846  0.18630  1
+ Sb  Sb2  1  0.74097  0.14846  0.05784  1

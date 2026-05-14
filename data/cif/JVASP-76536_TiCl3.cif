@@ -1,0 +1,35 @@
+CIF file written using JARVIS-Tools package.
+data_TiCl3
+_symmetry_space_group_name_H-M  'C2/m'
+_cell_length_a       5.99486
+_cell_length_b       5.99482
+_cell_length_c       22.9059
+_cell_angle_alpha    89.8917
+_cell_angle_beta     89.8917
+_cell_angle_gamma    119.685
+
+_symmetry_Int_Tables_number  12
+_chemical_formula_structural  TiCl3
+_chemical_formula_sum  Ti2Cl6
+_cell_volume  715.156657818383
+_cell_formula_units_Z  2
+loop_
+  _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+ 1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_fract_occupancy
+ Cl  Cl1  1  0.65978  0.65977  0.12693  1
+ Cl  Cl2  1  0.97239  0.31549  0.12388  1
+ Cl  Cl3  1  0.97530  0.97531  0.00009  1
+ Cl  Cl4  1  0.66248  0.31945  0.00310  1
+ Cl  Cl5  1  0.31550  0.97240  0.12388  1
+ Cl  Cl6  1  0.31944  0.66248  0.00310  1
+ Ti  Ti1  1  0.65655  0.97836  0.06348  1
+ Ti  Ti2  1  0.97837  0.65656  0.06348  1

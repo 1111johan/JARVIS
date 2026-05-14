@@ -1,0 +1,38 @@
+CIF file written using JARVIS-Tools package.
+data_Tl2SnAs2S6
+_symmetry_space_group_name_H-M  'P-3'
+_cell_length_a       6.70655
+_cell_length_b       6.70656
+_cell_length_c       27.4911
+_cell_angle_alpha    90
+_cell_angle_beta     90
+_cell_angle_gamma    120
+
+_symmetry_Int_Tables_number  147
+_chemical_formula_structural  Tl2SnAs2S6
+_chemical_formula_sum  Tl2SnAs2S6
+_cell_volume  1070.8328436805805
+_cell_formula_units_Z  1
+loop_
+  _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+ 1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_fract_occupancy
+ As  As1  1  0.20653  0.30589  0.11712  1
+ As  As2  1  0.53987  0.97256  0.15537  1
+ S  S1  1  0.10463  0.53564  0.07564  1
+ S  S2  1  0.97679  0.97425  0.07564  1
+ S  S3  1  0.20822  0.87066  0.19685  1
+ S  S4  1  0.53818  0.40779  0.07564  1
+ S  S5  1  0.76961  0.30421  0.19685  1
+ S  S6  1  0.64177  0.74282  0.19685  1
+ Sn  Sn1  1  0.87320  0.63923  0.13625  1
+ Tl  Tl1  1  0.20653  0.30589  0.23670  1
+ Tl  Tl2  1  0.53987  0.97256  0.03579  1

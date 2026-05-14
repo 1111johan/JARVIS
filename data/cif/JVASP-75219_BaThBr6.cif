@@ -1,0 +1,43 @@
+CIF file written using JARVIS-Tools package.
+data_BaThBr6
+_symmetry_space_group_name_H-M  'Pmma'
+_cell_length_a       4.4933
+_cell_length_b       9.49744
+_cell_length_c       27.2157
+_cell_angle_alpha    90
+_cell_angle_beta     90
+_cell_angle_gamma    90
+
+_symmetry_Int_Tables_number  51
+_chemical_formula_structural  BaThBr6
+_chemical_formula_sum  Ba2Th2Br12
+_cell_volume  1161.4255144407593
+_cell_formula_units_Z  2
+loop_
+  _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+ 1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_fract_occupancy
+ Ba  Ba1  1  0.00000  0.25000  0.60519  1
+ Ba  Ba2  1  0.00000  0.75000  0.39481  1
+ Br  Br1  1  0.50000  0.53718  0.34588  1
+ Br  Br2  1  0.50000  0.25000  0.51720  1
+ Br  Br3  1  0.00000  0.75000  0.67471  1
+ Br  Br4  1  0.00000  0.25000  0.32529  1
+ Br  Br5  1  0.50000  0.75000  0.48280  1
+ Br  Br6  1  0.00000  0.92943  0.55939  1
+ Br  Br7  1  0.50000  0.96282  0.34588  1
+ Br  Br8  1  0.50000  0.46282  0.65412  1
+ Br  Br9  1  0.00000  0.07057  0.44061  1
+ Br  Br10  1  0.00000  0.42943  0.44061  1
+ Br  Br11  1  0.50000  0.03718  0.65412  1
+ Br  Br12  1  0.00000  0.57057  0.55939  1
+ Th  Th1  1  0.50000  0.25000  0.39884  1
+ Th  Th2  1  0.50000  0.75000  0.60116  1

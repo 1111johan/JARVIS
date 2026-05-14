@@ -1,0 +1,59 @@
+CIF file written using JARVIS-Tools package.
+data_Bi2SeO5
+_symmetry_space_group_name_H-M  'Aem2'
+_cell_length_a       5.50882
+_cell_length_b       8.70018
+_cell_length_c       29.7639
+_cell_angle_alpha    90
+_cell_angle_beta     90
+_cell_angle_gamma    108.457
+
+_symmetry_Int_Tables_number  39
+_chemical_formula_structural  Bi2SeO5
+_chemical_formula_sum  Bi8Se4O20
+_cell_volume  1353.1409121650302
+_cell_formula_units_Z  4
+loop_
+  _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+ 1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_fract_occupancy
+ Bi  Bi1  1  0.25665  0.50000  0.45614  1
+ Bi  Bi2  1  0.75665  0.50000  0.54386  1
+ Bi  Bi3  1  0.73259  0.50000  0.35540  1
+ Bi  Bi4  1  0.23259  0.50000  0.64460  1
+ Bi  Bi5  1  0.07253  0.16927  0.54326  1
+ Bi  Bi6  1  0.90326  0.83073  0.45674  1
+ Bi  Bi7  1  0.57253  0.16927  0.45674  1
+ Bi  Bi8  1  0.40326  0.83073  0.54326  1
+ O  O1  1  0.62783  0.68660  0.61463  1
+ O  O2  1  0.06236  0.67211  0.50236  1
+ O  O3  1  0.39025  0.32789  0.49764  1
+ O  O4  1  0.56236  0.67211  0.49764  1
+ O  O5  1  0.12783  0.68660  0.38537  1
+ O  O6  1  0.06957  0.71150  0.66049  1
+ O  O7  1  0.94123  0.31340  0.38537  1
+ O  O8  1  0.13870  0.50000  0.57745  1
+ O  O9  1  0.44123  0.31340  0.61463  1
+ O  O10  1  0.89025  0.32789  0.50236  1
+ O  O11  1  0.56957  0.71150  0.33951  1
+ O  O12  1  0.65765  0.10067  0.58832  1
+ O  O13  1  0.15765  0.10067  0.41168  1
+ O  O14  1  0.55698  0.89933  0.41168  1
+ O  O15  1  0.63870  0.50000  0.42255  1
+ O  O16  1  0.26352  0.00000  0.50000  1
+ O  O17  1  0.76352  0.00000  0.50000  1
+ O  O18  1  0.85807  0.28850  0.66049  1
+ O  O19  1  0.05698  0.89933  0.58832  1
+ O  O20  1  0.35807  0.28850  0.33951  1
+ Se  Se1  1  0.39949  0.82765  0.36223  1
+ Se  Se2  1  0.57184  0.17235  0.63777  1
+ Se  Se3  1  0.07184  0.17235  0.36223  1
+ Se  Se4  1  0.89949  0.82765  0.63777  1

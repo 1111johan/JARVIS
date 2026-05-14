@@ -1,0 +1,30 @@
+CIF file written using JARVIS-Tools package.
+data_Bi2Pt
+_symmetry_space_group_name_H-M  'P-3m1'
+_cell_length_a       4.19264
+_cell_length_b       4.19265
+_cell_length_c       25.6076
+_cell_angle_alpha    90
+_cell_angle_beta     90
+_cell_angle_gamma    120
+
+_symmetry_Int_Tables_number  164
+_chemical_formula_structural  Bi2Pt
+_chemical_formula_sum  Bi2Pt
+_cell_volume  389.83091641220403
+_cell_formula_units_Z  1
+loop_
+  _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+ 1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_fract_occupancy
+ Bi  Bi1  1  0.72982  0.11161  0.16329  1
+ Bi  Bi2  1  0.39648  0.44495  0.05569  1
+ Pt  Pt1  1  0.06315  0.77828  0.10949  1

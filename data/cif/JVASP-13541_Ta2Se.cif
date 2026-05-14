@@ -1,0 +1,33 @@
+CIF file written using JARVIS-Tools package.
+data_Ta2Se
+_symmetry_space_group_name_H-M  'P4/nmm'
+_cell_length_a       3.38729
+_cell_length_b       3.38729
+_cell_length_c       28.338
+_cell_angle_alpha    90
+_cell_angle_beta     90
+_cell_angle_gamma    90
+
+_symmetry_Int_Tables_number  129
+_chemical_formula_structural  Ta2Se
+_chemical_formula_sum  Ta4Se2
+_cell_volume  325.14159072692365
+_cell_formula_units_Z  2
+loop_
+  _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+ 1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_fract_occupancy
+ Se  Se1  1  0.51836  0.01836  0.31100  1
+ Se  Se2  1  0.01836  0.51836  0.05381  1
+ Ta  Ta1  1  0.51836  0.01836  0.20931  1
+ Ta  Ta2  1  0.01836  0.51836  0.26665  1
+ Ta  Ta3  1  0.51836  0.01836  0.09816  1
+ Ta  Ta4  1  0.01836  0.51836  0.15550  1

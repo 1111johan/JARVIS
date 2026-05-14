@@ -1,0 +1,35 @@
+CIF file written using JARVIS-Tools package.
+data_SmZnPO
+_symmetry_space_group_name_H-M  'P-3m1'
+_cell_length_a       3.95127
+_cell_length_b       3.95127
+_cell_length_c       28.4651
+_cell_angle_alpha    90
+_cell_angle_beta     90
+_cell_angle_gamma    59.9999
+
+_symmetry_Int_Tables_number  164
+_chemical_formula_structural  SmZnPO
+_chemical_formula_sum  Sm2Zn2P2O2
+_cell_volume  384.87268417652746
+_cell_formula_units_Z  2
+loop_
+  _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+ 1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_fract_occupancy
+ O  O1  1  0.66667  0.66667  0.46936  1
+ O  O2  1  0.33333  0.33333  0.53064  1
+ P  P1  1  0.00000  0.00000  0.37394  1
+ P  P2  1  0.00000  0.00000  0.62606  1
+ Sm  Sm1  1  0.33333  0.33333  0.44861  1
+ Sm  Sm2  1  0.66667  0.66667  0.55139  1
+ Zn  Zn1  1  0.33333  0.33333  0.64114  1
+ Zn  Zn2  1  0.66667  0.66667  0.35886  1

@@ -1,0 +1,33 @@
+CIF file written using JARVIS-Tools package.
+data_BiSeI
+_symmetry_space_group_name_H-M  'P2_1/m'
+_cell_length_a       4.32031
+_cell_length_b       10.727
+_cell_length_c       25.0371
+_cell_angle_alpha    90
+_cell_angle_beta     90
+_cell_angle_gamma    90
+
+_symmetry_Int_Tables_number  11
+_chemical_formula_structural  BiSeI
+_chemical_formula_sum  Bi2Se2I2
+_cell_volume  1160.3237746817347
+_cell_formula_units_Z  2
+loop_
+  _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+ 1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_fract_occupancy
+ Bi  Bi1  1  0.75000  0.36220  0.21233  1
+ Bi  Bi2  1  0.25000  0.63780  0.14862  1
+ I  I1  1  0.25000  0.16466  0.17741  1
+ I  I2  1  0.75000  0.83534  0.18354  1
+ Se  Se1  1  0.75000  0.46581  0.11396  1
+ Se  Se2  1  0.25000  0.53419  0.24699  1

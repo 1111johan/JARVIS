@@ -1,0 +1,43 @@
+CIF file written using JARVIS-Tools package.
+data_TaCoTe2
+_symmetry_space_group_name_H-M  'P2_1/c'
+_cell_length_a       6.3281
+_cell_length_b       7.76427
+_cell_length_c       24.6645
+_cell_angle_alpha    92.5729
+_cell_angle_beta     90
+_cell_angle_gamma    90
+
+_symmetry_Int_Tables_number  14
+_chemical_formula_structural  TaCoTe2
+_chemical_formula_sum  Ta4Co4Te8
+_cell_volume  1210.6188188218084
+_cell_formula_units_Z  4
+loop_
+  _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+ 1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_fract_occupancy
+ Co  Co1  1  0.15050  0.00740  0.06361  1
+ Co  Co2  1  0.84950  0.99260  0.12551  1
+ Co  Co3  1  0.34950  0.50740  0.06361  1
+ Co  Co4  1  0.65050  0.49260  0.12551  1
+ Ta  Ta1  1  0.97794  0.30250  0.08988  1
+ Ta  Ta2  1  0.02206  0.69750  0.09924  1
+ Ta  Ta3  1  0.52206  0.80250  0.08988  1
+ Ta  Ta4  1  0.47794  0.19750  0.09924  1
+ Te  Te1  1  0.74592  0.53157  0.02386  1
+ Te  Te2  1  0.24592  0.96843  0.16525  1
+ Te  Te3  1  0.25408  0.46843  0.16525  1
+ Te  Te4  1  0.24971  0.75170  0.99991  1
+ Te  Te5  1  0.74971  0.74830  0.18921  1
+ Te  Te6  1  0.75408  0.03157  0.02386  1
+ Te  Te7  1  0.75029  0.24830  0.18921  1
+ Te  Te8  1  0.25029  0.25170  0.99991  1

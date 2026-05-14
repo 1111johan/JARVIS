@@ -1,0 +1,41 @@
+CIF file written using JARVIS-Tools package.
+data_NbTe5Pd
+_symmetry_space_group_name_H-M  'Pmma'
+_cell_length_a       3.76894
+_cell_length_b       15.6359
+_cell_length_c       24.4633
+_cell_angle_alpha    90
+_cell_angle_beta     90
+_cell_angle_gamma    90
+
+_symmetry_Int_Tables_number  51
+_chemical_formula_structural  NbTe5Pd
+_chemical_formula_sum  Nb2Te10Pd2
+_cell_volume  1441.641060282914
+_cell_formula_units_Z  2
+loop_
+  _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+ 1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_fract_occupancy
+ Nb  Nb1  1  0.50000  0.15719  0.08773  1
+ Nb  Nb2  1  0.50000  0.65719  0.09472  1
+ Pd  Pd1  1  0.00000  0.90719  0.09125  1
+ Pd  Pd2  1  0.00000  0.40719  0.09120  1
+ Te  Te1  1  0.00000  0.05692  0.14964  1
+ Te  Te2  1  0.50000  0.98996  0.03121  1
+ Te  Te3  1  0.00000  0.15716  0.99867  1
+ Te  Te4  1  0.00000  0.25750  0.14960  1
+ Te  Te5  1  0.50000  0.32440  0.03116  1
+ Te  Te6  1  0.00000  0.75750  0.03284  1
+ Te  Te7  1  0.50000  0.82440  0.15129  1
+ Te  Te8  1  0.00000  0.55692  0.03281  1
+ Te  Te9  1  0.50000  0.48996  0.15124  1
+ Te  Te10  1  0.00000  0.65716  0.18378  1

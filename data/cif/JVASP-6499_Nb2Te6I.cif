@@ -1,0 +1,45 @@
+CIF file written using JARVIS-Tools package.
+data_Nb2Te6I
+_symmetry_space_group_name_H-M  'P-1'
+_cell_length_a       9.30071
+_cell_length_b       9.72073
+_cell_length_c       24.2855
+_cell_angle_alpha    90
+_cell_angle_beta     90
+_cell_angle_gamma    112.741
+
+_symmetry_Int_Tables_number  2
+_chemical_formula_structural  Nb2Te6I
+_chemical_formula_sum  Nb4Te12I2
+_cell_volume  2024.962244169825
+_cell_formula_units_Z  2
+loop_
+  _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+ 1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_fract_occupancy
+ I  I1  1  0.81667  0.35253  0.34371  1
+ I  I2  1  0.18333  0.64747  0.24452  1
+ Nb  Nb1  1  0.52598  0.36889  0.30756  1
+ Nb  Nb2  1  0.47402  0.63111  0.28067  1
+ Nb  Nb3  1  0.82456  0.87108  0.28916  1
+ Nb  Nb4  1  0.17544  0.12892  0.29907  1
+ Te  Te1  1  0.37688  0.22301  0.40038  1
+ Te  Te2  1  0.95513  0.02328  0.38850  1
+ Te  Te3  1  0.65242  0.64284  0.37345  1
+ Te  Te4  1  0.24170  0.41127  0.35356  1
+ Te  Te5  1  0.54321  0.91114  0.33309  1
+ Te  Te6  1  0.91562  0.16724  0.24637  1
+ Te  Te7  1  0.75830  0.58873  0.23467  1
+ Te  Te8  1  0.34758  0.35716  0.21478  1
+ Te  Te9  1  0.04487  0.97672  0.19973  1
+ Te  Te10  1  0.62312  0.77699  0.18785  1
+ Te  Te11  1  0.45679  0.08886  0.25514  1
+ Te  Te12  1  0.08438  0.83276  0.34187  1

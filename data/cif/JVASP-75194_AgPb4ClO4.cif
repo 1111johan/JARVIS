@@ -1,0 +1,47 @@
+CIF file written using JARVIS-Tools package.
+data_AgPb4ClO4
+_symmetry_space_group_name_H-M  'P4/n'
+_cell_length_a       8.20486
+_cell_length_b       8.20486
+_cell_length_c       26.38
+_cell_angle_alpha    90
+_cell_angle_beta     90
+_cell_angle_gamma    90
+
+_symmetry_Int_Tables_number  85
+_chemical_formula_structural  AgPb4ClO4
+_chemical_formula_sum  Ag2Pb8Cl2O8
+_cell_volume  1775.8980697824302
+_cell_formula_units_Z  2
+loop_
+  _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+ 1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_fract_occupancy
+ Ag  Ag1  1  0.50000  0.00000  0.51159  1
+ Ag  Ag2  1  0.00000  0.50000  0.48841  1
+ Cl  Cl1  1  0.50000  0.00000  0.60736  1
+ Cl  Cl2  1  0.00000  0.50000  0.39264  1
+ O  O1  1  0.09298  0.23399  0.52342  1
+ O  O2  1  0.40702  0.26601  0.47658  1
+ O  O3  1  0.76601  0.09298  0.47658  1
+ O  O4  1  0.59298  0.73399  0.47658  1
+ O  O5  1  0.23399  0.90702  0.47658  1
+ O  O6  1  0.90702  0.76601  0.52342  1
+ O  O7  1  0.26601  0.59298  0.52342  1
+ O  O8  1  0.73399  0.40702  0.52342  1
+ Pb  Pb1  1  0.82893  0.84098  0.44410  1
+ Pb  Pb2  1  0.65902  0.32893  0.44410  1
+ Pb  Pb3  1  0.34098  0.67107  0.44410  1
+ Pb  Pb4  1  0.32893  0.34098  0.55590  1
+ Pb  Pb5  1  0.84098  0.17107  0.55590  1
+ Pb  Pb6  1  0.15902  0.82893  0.55590  1
+ Pb  Pb7  1  0.17107  0.15902  0.44410  1
+ Pb  Pb8  1  0.67107  0.65902  0.55590  1

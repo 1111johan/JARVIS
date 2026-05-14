@@ -1,0 +1,38 @@
+CIF file written using JARVIS-Tools package.
+data_SnP7Au3
+_symmetry_space_group_name_H-M  'P1'
+_cell_length_a       5.06711
+_cell_length_b       5.73325
+_cell_length_c       25.9803
+_cell_angle_alpha    90
+_cell_angle_beta     96.7688
+_cell_angle_gamma    99.2757
+
+_symmetry_Int_Tables_number  1
+_chemical_formula_structural  SnP7Au3
+_chemical_formula_sum  SnP7Au3
+_cell_volume  739.5531926082198
+_cell_formula_units_Z  1
+loop_
+  _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+ 1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_fract_occupancy
+ Au  Au1  1  0.55761  0.38627  0.23311  1
+ Au  Au2  1  0.70834  0.37364  0.02963  1
+ Au  Au3  1  0.00837  0.35414  0.16723  1
+ P  P1  1  0.06817  0.73845  0.13227  1
+ P  P2  1  0.61865  0.78818  0.21288  1
+ P  P3  1  0.74939  0.77182  0.06718  1
+ P  P4  1  0.40059  0.99604  0.26044  1
+ P  P5  1  0.02198  0.97365  0.20057  1
+ P  P6  1  0.20705  0.29571  0.04627  1
+ P  P7  1  0.90357  0.02720  0.00539  1
+ Sn  Sn1  1  0.50392  0.05728  0.11993  1

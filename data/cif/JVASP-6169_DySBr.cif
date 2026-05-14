@@ -1,0 +1,33 @@
+CIF file written using JARVIS-Tools package.
+data_DySBr
+_symmetry_space_group_name_H-M  'Pmmn'
+_cell_length_a       4.04085
+_cell_length_b       5.34003
+_cell_length_c       29.1125
+_cell_angle_alpha    90
+_cell_angle_beta     90
+_cell_angle_gamma    90
+
+_symmetry_Int_Tables_number  59
+_chemical_formula_structural  DySBr
+_chemical_formula_sum  Dy2S2Br2
+_cell_volume  628.197766751715
+_cell_formula_units_Z  2
+loop_
+  _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+ 1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_fract_occupancy
+ Br  Br1  1  0.11712  0.34961  0.26355  1
+ Br  Br2  1  0.61712  0.84961  0.04946  1
+ Dy  Dy1  1  0.61712  0.34961  0.19629  1
+ Dy  Dy2  1  0.11712  0.84961  0.11672  1
+ S  S1  1  0.61712  0.84961  0.18050  1
+ S  S2  1  0.11712  0.34961  0.13251  1

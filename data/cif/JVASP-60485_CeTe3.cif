@@ -1,0 +1,35 @@
+CIF file written using JARVIS-Tools package.
+data_CeTe3
+_symmetry_space_group_name_H-M  'P4/nmm'
+_cell_length_a       4.42923
+_cell_length_b       4.42927
+_cell_length_c       29.1254
+_cell_angle_alpha    90
+_cell_angle_beta     90
+_cell_angle_gamma    90
+
+_symmetry_Int_Tables_number  129
+_chemical_formula_structural  CeTe3
+_chemical_formula_sum  Ce2Te6
+_cell_volume  571.3888379900652
+_cell_formula_units_Z  2
+loop_
+  _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+ 1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_fract_occupancy
+ Ce  Ce1  1  0.92093  0.25000  0.22913  1
+ Ce  Ce2  1  0.42093  0.75000  0.08419  1
+ Te  Te1  1  0.92080  0.75000  0.31306  1
+ Te  Te2  1  0.42081  0.25000  0.31306  1
+ Te  Te3  1  0.42096  0.75000  0.19701  1
+ Te  Te4  1  0.92096  0.25000  0.11630  1
+ Te  Te5  1  0.42080  0.25000  0.00025  1
+ Te  Te6  1  0.92081  0.75000  0.00025  1

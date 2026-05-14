@@ -1,0 +1,35 @@
+CIF file written using JARVIS-Tools package.
+data_DyTe3
+_symmetry_space_group_name_H-M  'Pmma'
+_cell_length_a       4.04854
+_cell_length_b       4.58793
+_cell_length_c       30.5856
+_cell_angle_alpha    90
+_cell_angle_beta     90
+_cell_angle_gamma    90
+
+_symmetry_Int_Tables_number  51
+_chemical_formula_structural  DyTe3
+_chemical_formula_sum  Dy2Te6
+_cell_volume  568.1094394445089
+_cell_formula_units_Z  2
+loop_
+  _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+ 1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_fract_occupancy
+ Dy  Dy1  1  0.50000  0.25000  0.45304  1
+ Dy  Dy2  1  0.50000  0.75000  0.54696  1
+ Te  Te1  1  0.50000  0.25000  0.34967  1
+ Te  Te2  1  0.00000  0.25000  0.54830  1
+ Te  Te3  1  0.00000  0.75000  0.45170  1
+ Te  Te4  1  0.50000  0.75000  0.65033  1
+ Te  Te5  1  0.00000  0.75000  0.32884  1
+ Te  Te6  1  0.00000  0.25000  0.67116  1

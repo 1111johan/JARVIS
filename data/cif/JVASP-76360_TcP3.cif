@@ -1,0 +1,35 @@
+CIF file written using JARVIS-Tools package.
+data_TcP3
+_symmetry_space_group_name_H-M  'Pmn2_1'
+_cell_length_a       3.18024
+_cell_length_b       4.71909
+_cell_length_c       27.3261
+_cell_angle_alpha    90
+_cell_angle_beta     90
+_cell_angle_gamma    90
+
+_symmetry_Int_Tables_number  31
+_chemical_formula_structural  TcP3
+_chemical_formula_sum  Tc2P6
+_cell_volume  410.1051604659658
+_cell_formula_units_Z  2
+loop_
+  _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+ 1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_fract_occupancy
+ P  P1  1  0.25000  0.58087  0.44217  1
+ P  P2  1  0.75000  0.08087  0.40552  1
+ P  P3  1  0.25000  0.98911  0.30054  1
+ P  P4  1  0.75000  0.75957  0.34704  1
+ P  P5  1  0.75000  0.48911  0.54715  1
+ P  P6  1  0.25000  0.25957  0.50065  1
+ Tc  Tc1  1  0.25000  0.37052  0.36214  1
+ Tc  Tc2  1  0.75000  0.87052  0.48555  1
