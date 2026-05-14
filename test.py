@@ -2,7 +2,7 @@ import argparse
 import glob
 import os
 import random
-from typing import Dict, List
+from typing import Dict, List, Optional
 
 import numpy as np
 import pandas as pd
@@ -14,11 +14,7 @@ from models.diffusion_model import DiffusionGNN
 from models.optimization import PropertyPredictor
 from models.structure_generator import StructureGenerator
 from utils.geo_utils import proxy_targets, total_material_score
-from utils.vis import (
-    plot_generated_structures,
-    plot_her_distribution,
-    plot_stability_curve,
-)
+from utils.vis import plot_generated_structures, plot_her_distribution, plot_stability_curve
 
 
 def set_seed(seed: int = 42) -> None:
@@ -30,7 +26,8 @@ def set_seed(seed: int = 42) -> None:
 
 def ensure_cif_data(cif_dir: str) -> None:
     os.makedirs(cif_dir, exist_ok=True)
-    if glob.glob(os.path.join(cif_dir, "*.cif")):
+    metadata_csv = os.path.join(os.path.dirname(cif_dir), "jarvis_dft_2d_metadata.csv")
+    if glob.glob(os.path.join(cif_dir, "*.cif")) and os.path.exists(metadata_csv):
         return
     from download_jarvis_2d import main as download_main
 
@@ -72,23 +69,102 @@ def evaluate_structure(
     g = graph.to(device)
     with torch.no_grad():
         pred = property_model(x=g.x, pos=g.pos, edge_index=g.edge_index)
+
     pred_delta = float(pred["delta_g_h"].item())
     pred_thermo = float(pred["thermo"].item())
     pred_kinetic = float(pred["kinetic"].item())
     pred_synth = float(pred["synthesis"].item())
-    model_total = total_material_score(pred_delta, pred_thermo, pred_kinetic, pred_synth)
+    pred_total = total_material_score(pred_delta, pred_thermo, pred_kinetic, pred_synth)
+
+    delta_final = 0.50 * proxy["delta_g_h"] + 0.50 * pred_delta
+    thermo_final = float(np.clip(0.60 * proxy["thermo"] + 0.40 * pred_thermo, 0.0, 1.0))
+    kinetic_final = float(np.clip(0.60 * proxy["kinetic"] + 0.40 * pred_kinetic, 0.0, 1.0))
+    synth_final = float(np.clip(0.60 * proxy["synthesis"] + 0.40 * pred_synth, 0.0, 1.0))
+    total_final = total_material_score(delta_final, thermo_final, kinetic_final, synth_final)
+
     return {
-        "delta_g_h": proxy["delta_g_h"],
-        "thermo": proxy["thermo"],
-        "kinetic": proxy["kinetic"],
-        "synthesis": proxy["synthesis"],
-        "total_score": proxy["total"],
+        "delta_g_h_proxy": proxy["delta_g_h"],
+        "thermo_proxy": proxy["thermo"],
+        "kinetic_proxy": proxy["kinetic"],
+        "synthesis_proxy": proxy["synthesis"],
+        "total_proxy": proxy["total"],
         "pred_delta_g_h": pred_delta,
         "pred_thermo": pred_thermo,
         "pred_kinetic": pred_kinetic,
         "pred_synthesis": pred_synth,
-        "pred_total_score": model_total,
+        "pred_total": pred_total,
+        "delta_g_h_final": delta_final,
+        "thermo_final": thermo_final,
+        "kinetic_final": kinetic_final,
+        "synthesis_final": synth_final,
+        "total_score": total_final,
     }
+
+
+def summarize_metrics(df: pd.DataFrame, method_name: str) -> Dict[str, float]:
+    if len(df) == 0:
+        return {
+            "Method": method_name,
+            "Avg_HER_DeltaG_eV": np.nan,
+            "Stability_Score": np.nan,
+            "Synthesis_Success_Rate": np.nan,
+            "Avg_Total_Score": np.nan,
+            "N": 0,
+        }
+    stability = (df["thermo_final"] + df["kinetic_final"]) / 2.0
+    return {
+        "Method": method_name,
+        "Avg_HER_DeltaG_eV": float(np.mean(np.abs(df["delta_g_h_final"]))),
+        "Stability_Score": float(np.mean(stability)),
+        "Synthesis_Success_Rate": float(np.mean(df["synthesis_final"] >= 0.60)),
+        "Avg_Total_Score": float(np.mean(df["total_score"])),
+        "N": int(len(df)),
+    }
+
+
+def evaluate_cif_folder(
+    cif_dir: str, property_model: PropertyPredictor, device: torch.device, max_items: int = 100
+) -> pd.DataFrame:
+    cif_files = sorted(glob.glob(os.path.join(cif_dir, "*.cif")))[:max_items]
+    rows: List[Dict[str, float]] = []
+    for i, path in enumerate(cif_files):
+        try:
+            structure = Structure.from_file(path)
+            metrics = evaluate_structure(structure=structure, property_model=property_model, device=device)
+            rows.append(
+                {
+                    "candidate_id": i,
+                    "formula": structure.composition.reduced_formula,
+                    "cif_path": path,
+                    **metrics,
+                }
+            )
+        except Exception:
+            continue
+    return pd.DataFrame(rows)
+
+
+def write_comparison_outputs(
+    ours_df: pd.DataFrame, baseline_df: Optional[pd.DataFrame], out_dir: str
+) -> None:
+    os.makedirs(out_dir, exist_ok=True)
+    rows = [summarize_metrics(ours_df, "Ours")]
+    if baseline_df is not None and len(baseline_df) > 0:
+        rows.insert(0, summarize_metrics(baseline_df, "baseline"))
+    comp = pd.DataFrame(rows)
+    comp.to_csv(os.path.join(out_dir, "baseline_comparison.csv"), index=False)
+
+    md_lines = [
+        "| Method | Avg HER DeltaG (eV) | Stability Score | Synthesis Success Rate | N |",
+        "|---|---:|---:|---:|---:|",
+    ]
+    for _, r in comp.iterrows():
+        md_lines.append(
+            f"| {r['Method']} | {r['Avg_HER_DeltaG_eV']:.4f} | {r['Stability_Score']:.4f} | "
+            f"{r['Synthesis_Success_Rate']:.4f} | {int(r['N'])} |"
+        )
+    with open(os.path.join(out_dir, "baseline_comparison.md"), "w", encoding="utf-8") as f:
+        f.write("\n".join(md_lines) + "\n")
 
 
 def generate(args: argparse.Namespace) -> None:
@@ -130,9 +206,7 @@ def generate(args: argparse.Namespace) -> None:
 
     df = pd.DataFrame(rows).sort_values("total_score", ascending=False).reset_index(drop=True)
     if len(df) < args.top_k:
-        raise RuntimeError(
-            f"Generated {len(df)} candidates, smaller than top_k={args.top_k}."
-        )
+        raise RuntimeError(f"Generated {len(df)} candidates, smaller than top_k={args.top_k}.")
     top_df = df.head(args.top_k).copy()
 
     for rank, row in top_df.reset_index(drop=True).iterrows():
@@ -144,14 +218,29 @@ def generate(args: argparse.Namespace) -> None:
     top_csv = os.path.join("results", "top10_generated_materials.csv")
     top_df.to_csv(top_csv, index=False)
 
-    plot_her_distribution(df=top_df, save_path=os.path.join("results", "her_performance.png"))
-    plot_stability_curve(df=top_df, save_path=os.path.join("results", "stability_curve.png"))
     plot_df = top_df.copy()
+    plot_df["delta_g_h"] = plot_df["delta_g_h_final"]
+    plot_df["thermo"] = plot_df["thermo_final"]
+    plot_df["kinetic"] = plot_df["kinetic_final"]
+    plot_df["synthesis"] = plot_df["synthesis_final"]
     plot_df["cif_path"] = plot_df["top_cif_path"].fillna(plot_df["cif_path"])
-    plot_generated_structures(
-        df=plot_df,
-        save_path=os.path.join("results", "generated_structures.png"),
-    )
+
+    plot_her_distribution(df=plot_df, save_path=os.path.join("results", "her_performance.png"))
+    plot_stability_curve(df=plot_df, save_path=os.path.join("results", "stability_curve.png"))
+    plot_generated_structures(df=plot_df, save_path=os.path.join("results", "generated_structures.png"))
+
+    baseline_df: Optional[pd.DataFrame] = None
+    if args.baseline_cif_dir and os.path.isdir(args.baseline_cif_dir):
+        baseline_df = evaluate_cif_folder(
+            cif_dir=args.baseline_cif_dir,
+            property_model=property_model,
+            device=device,
+            max_items=args.baseline_max_items,
+        )
+        if len(baseline_df) > 0:
+            baseline_df.to_csv(os.path.join("results", "baseline_evaluation.csv"), index=False)
+
+    write_comparison_outputs(ours_df=top_df, baseline_df=baseline_df, out_dir="results")
 
     print(f"Generated candidates: {len(df)}")
     print(f"Saved top-{args.top_k} CSV: {top_csv}")
@@ -159,6 +248,8 @@ def generate(args: argparse.Namespace) -> None:
     print("  results/her_performance.png")
     print("  results/stability_curve.png")
     print("  results/generated_structures.png")
+    if baseline_df is not None and len(baseline_df) > 0:
+        print("Saved baseline comparison: results/baseline_comparison.csv")
 
 
 def build_parser() -> argparse.ArgumentParser:
@@ -178,6 +269,12 @@ def build_parser() -> argparse.ArgumentParser:
     parser.add_argument(
         "--property_ckpt", type=str, default=os.path.join("checkpoints", "property_model.pt")
     )
+    parser.add_argument(
+        "--baseline_cif_dir",
+        type=str,
+        default="d:/cursor_file/baseline_material_generation/generated_materials/cif_files",
+    )
+    parser.add_argument("--baseline_max_items", type=int, default=100)
     return parser
 
 

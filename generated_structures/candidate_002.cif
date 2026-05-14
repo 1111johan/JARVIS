@@ -1,17 +1,17 @@
 # generated using pymatgen
-data_BI3
+data_NdIO
 _symmetry_space_group_name_H-M   'P 1'
-_cell_length_a   7.03370000
-_cell_length_b   7.03370000
-_cell_length_c   21.83470000
+_cell_length_a   4.07566000
+_cell_length_b   4.07566000
+_cell_length_c   29.62950000
 _cell_angle_alpha   90.00000000
 _cell_angle_beta   90.00000000
-_cell_angle_gamma   120.00000000
+_cell_angle_gamma   90.00000000
 _symmetry_Int_Tables_number   1
-_chemical_formula_structural   BI3
-_chemical_formula_sum   'B1 I3'
-_cell_volume   935.50377176
-_cell_formula_units_Z   1
+_chemical_formula_structural   NdIO
+_chemical_formula_sum   'Nd2 I2 O2'
+_cell_volume   492.17575592
+_cell_formula_units_Z   2
 loop_
  _symmetry_equiv_pos_site_id
  _symmetry_equiv_pos_as_xyz
@@ -24,7 +24,9 @@ loop_
  _atom_site_fract_y
  _atom_site_fract_z
  _atom_site_occupancy
-  B  B0  1  0.31766424  0.51847941  0.49932045  1
-  I  I1  1  0.49270779  0.49858725  0.49973983  1
-  I  I2  1  0.67072463  0.67510301  0.49953461  1
-  I  I3  1  0.59116387  0.38977116  0.50012010  1
+  Nd  Nd1  1  0.67865000  0.17865000  0.20220000  1
+  Nd  Nd2  1  0.17865000  0.67865000  0.12280000  1
+  I  I1  1  0.17865000  0.67865000  0.26618000  1
+  I  I2  1  0.67865000  0.17865000  0.05882000  1
+  O  O1  1  0.67865000  0.67865000  0.16250000  1
+  O  O2  1  0.17865000  0.17865000  0.16250000  1

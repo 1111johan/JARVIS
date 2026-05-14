@@ -1,0 +1,37 @@
+formula,evidence_type,reference_note
+C,experimental,graphene exfoliation and CVD reports
+BN,experimental,h-BN monolayer synthesis reports
+P,experimental,phosphorene exfoliation reports
+MoS2,experimental,monolayer TMDC synthesis reports
+WS2,experimental,monolayer TMDC synthesis reports
+MoSe2,experimental,monolayer TMDC synthesis reports
+WSe2,experimental,monolayer TMDC synthesis reports
+MoTe2,experimental,monolayer TMDC synthesis reports
+WTe2,experimental,monolayer TMDC synthesis reports
+TiS2,experimental,layered chalcogenide exfoliation reports
+NbS2,experimental,layered chalcogenide exfoliation reports
+TaS2,experimental,layered chalcogenide exfoliation reports
+TiSe2,experimental,layered chalcogenide exfoliation reports
+NbSe2,experimental,layered chalcogenide exfoliation reports
+TaSe2,experimental,layered chalcogenide exfoliation reports
+CrI3,experimental,2D magnetic crystal synthesis reports
+CrBr3,experimental,2D magnetic crystal synthesis reports
+CrCl3,experimental,2D magnetic crystal synthesis reports
+FePS3,experimental,2D magnetic phosphorus chalcogenide reports
+MnPS3,experimental,2D magnetic phosphorus chalcogenide reports
+MnPSe3,experimental,2D magnetic phosphorus chalcogenide reports
+NiPS3,experimental,2D magnetic phosphorus chalcogenide reports
+NiPSe3,experimental,2D magnetic phosphorus chalcogenide reports
+Bi2Se3,experimental,layered topological material thin-film reports
+Bi2Te3,experimental,layered topological material thin-film reports
+Sb2Te3,experimental,layered topological material thin-film reports
+InSe,experimental,group-III chalcogenide 2D reports
+GaSe,experimental,group-III chalcogenide 2D reports
+SnS2,experimental,post-transition metal chalcogenide 2D reports
+SnSe2,experimental,post-transition metal chalcogenide 2D reports
+HfS2,experimental,transition metal dichalcogenide reports
+ZrS2,experimental,transition metal dichalcogenide reports
+PtSe2,experimental,noble-metal dichalcogenide reports
+PdSe2,experimental,noble-metal dichalcogenide reports
+ReS2,experimental,distorted TMDC monolayer reports
+ReSe2,experimental,distorted TMDC monolayer reports

@@ -1,16 +1,16 @@
 # generated using pymatgen
-data_ZrGeTe
+data_MnSe
 _symmetry_space_group_name_H-M   'P 1'
-_cell_length_a   3.76986000
-_cell_length_b   3.76986000
-_cell_length_c   29.30040000
+_cell_length_a   3.57677000
+_cell_length_b   3.57677000
+_cell_length_c   26.24640000
 _cell_angle_alpha   90.00000000
 _cell_angle_beta   90.00000000
 _cell_angle_gamma   90.00000000
 _symmetry_Int_Tables_number   1
-_chemical_formula_structural   ZrGeTe
-_chemical_formula_sum   'Zr2 Ge2 Te2'
-_cell_volume   416.41272623
+_chemical_formula_structural   MnSe
+_chemical_formula_sum   'Mn2 Se2'
+_cell_volume   335.77763954
 _cell_formula_units_Z   2
 loop_
  _symmetry_equiv_pos_site_id
@@ -24,9 +24,7 @@ loop_
  _atom_site_fract_y
  _atom_site_fract_z
  _atom_site_occupancy
-  Zr  Zr1  1  0.21607000  0.71606000  0.23291000  1.0
-  Zr  Zr2  1  0.71606000  0.21607000  0.08450000  1.0
-  Ge  Ge1  1  0.71606000  0.71606000  0.15871000  1.0
-  Ge  Ge2  1  0.21607000  0.21607000  0.15871000  1.0
-  Te  Te1  1  0.71606000  0.21607000  0.27858000  1.0
-  Te  Te2  1  0.21607000  0.71606000  0.03883000  1.0
+  Mn  Mn1  1  0.86436000  0.86436000  0.11899000  1.0
+  Mn  Mn2  1  0.36436000  0.36436000  0.11899000  1.0
+  Se  Se1  1  0.86436000  0.36436000  0.17894000  1.0
+  Se  Se2  1  0.36436000  0.86436000  0.05905000  1.0

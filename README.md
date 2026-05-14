@@ -1,94 +1,105 @@
 # Diffusion-based 2D Material Generation for HER Catalysts
 
 ## 1. Project Goal
-Build a GNN-based diffusion framework to generate 2D material structures for HER catalyst screening, while jointly optimizing:
-- HER activity (`ΔG_H` close to `0 eV`)
+Generate new 2D crystal structures with a GNN diffusion model, while jointly optimizing:
+- HER activity (`Delta G_H` close to `0 eV`)
 - Thermodynamic stability
 - Kinetic stability
 - Experimental synthesizability
 
-## 2. Dataset (JARVIS-DFT 2D)
-This project uses **JARVIS-DFT 2D** materials downloaded with `jarvis-tools` (`data("dft_2d")`), then converted to CIF under `data/cif/`.
+## 2. Dataset
+This project uses **JARVIS-DFT 2D** from `jarvis-tools` (`data("dft_2d")`), converted to CIF in `data/cif/`.
 
-Data pipeline:
-1. Download JSON-like structure records from JARVIS.
-2. Convert `atoms` dict to JARVIS `Atoms`.
-3. Save each material as CIF (`jid_formula.cif`).
-4. Parse CIF with `pymatgen` and convert to crystal graphs.
+Data files:
+- `data/cif/*.cif`
+- `data/jarvis_dft_2d_metadata.csv` (exported from JARVIS records)
+- `data/experimental_2d_labels.csv` (curated experimentally synthesized 2D formula list)
 
 ## 3. Method Overview
-1. CIF -> crystal graph (`x`, `pos`, `edge_index`)
-2. Train diffusion denoiser on noisy fractional coordinates
-3. Train property predictor jointly (HER/stability/synthesis)
-4. Reverse diffusion generation with 2D constraints:
-- `z` coordinate constrained to `[0.45, 0.55]`
-- `c-axis >= 15 Å` vacuum
-5. Rank generated structures by multi-objective score and export top-k CIF
+Pipeline:
+1. Download JARVIS-DFT 2D structures and metadata.
+2. Build crystal graphs from CIF (`x`, `pos`, `edge_index`).
+3. Train GNN diffusion denoiser on noisy fractional coordinates.
+4. Train multi-task property heads for HER/stability/synthesis.
+5. Reverse-generate structures with 2D constraints:
+- `z` slab in `[0.45, 0.55]`
+- `c-axis >= 15 A`
+6. Rank generated materials and export top-k CIF.
 
 ## 4. Model Architecture
 ```mermaid
 flowchart LR
-    A[JARVIS-DFT 2D CIF Dataset] --> B[Crystal Graph Construction]
+    A[JARVIS-DFT 2D CIF + Metadata] --> B[Crystal Graph Construction]
     B --> C[GNN Diffusion Denoiser]
-    C --> D[Structure Generator]
-    D --> E[HER / Stability / Synthesis Predictors]
-    E --> F[Multi-objective Optimization]
-    F --> G[Top-k Generated 2D HER Candidates]
+    C --> D[Reverse Diffusion Structure Generator]
+    D --> E[Property Heads: HER/Thermo/Kinetic/Synthesis]
+    E --> F[Multi-objective Ranking]
+    F --> G[Top-k Generated 2D Candidates]
 ```
 
-Core modules:
-- `models/diffusion_model.py`: `DiffusionGNN`
-- `models/optimization.py`: `PropertyPredictor` + multitask loss
-- `models/structure_generator.py`: reverse diffusion sampling
+Main files:
+- `models/diffusion_model.py`
+- `models/optimization.py`
+- `models/structure_generator.py`
 
 ## 5. Diffusion Process
 Forward noising:
 \[
-\tilde{\mathbf{x}}_t = \mathbf{x}_0 + \sigma(t)\epsilon,\quad \epsilon \sim \mathcal{N}(0, I)
+\tilde{x}_t = x_0 + \sigma(t)\epsilon,\quad \epsilon \sim \mathcal{N}(0, I)
 \]
 
-Denoising objective:
+Denoising loss:
 \[
-\mathcal{L}_{diffusion} = \|\epsilon - \epsilon_\theta(\tilde{\mathbf{x}}_t, t, c)\|_2^2
+L_{diffusion} = \|\epsilon - \epsilon_\theta(\tilde{x}_t, t, c)\|_2^2
 \]
 
 Condition vector:
 \[
-c = [\Delta G_H^{target},\ S_{stability}^{target},\ S_{synthesis}^{target}]
+c = [\Delta G_H^{target},\ S_{thermo}^{target},\ S_{synthesis}^{target}]
 \]
 
 ## 6. Multi-objective Optimization
-Property heads predict:
-- `ΔG_H`
+Predicted properties:
+- `Delta G_H`
 - `S_thermo`
 - `S_kinetic`
 - `S_synthesis`
 
-Joint loss:
+Joint objective:
 \[
-\mathcal{L}=\mathcal{L}_{diffusion}
- + \lambda_1|\Delta G_H|
- + \lambda_2(1-S_{thermo})
- + \lambda_3(1-S_{kinetic})
- + \lambda_4(1-S_{synthesis})
+L = L_{diffusion}
+ + \lambda_1 |\Delta G_H|
+ + \lambda_2 (1 - S_{thermo})
+ + \lambda_3 (1 - S_{kinetic})
+ + \lambda_4 (1 - S_{synthesis})
 \]
 
-Training implementation includes both:
-- proxy-supervised regression terms
-- objective-shaping terms pushing toward HER/stability/synthesis targets
+## 7. Experimental Data Integration for Synthesizability
+To satisfy the "existing experimental data" requirement, synthesis supervision is not purely heuristic:
 
-## 7. HER / Stability / Synthesizability Proxies
-Implemented in `utils/geo_utils.py`:
+1. **JARVIS metadata export** (`download_jarvis_2d.py`):
+- `formation_energy_peratom`
+- `ehull`
+- `exfoliation_energy`
+- `icsd`
+
+2. **Curated experimental labels** (`data/experimental_2d_labels.csv`):
+- known experimentally synthesized 2D formula families (graphene, h-BN, TMDCs, magnetic 2D compounds, etc.)
+
+3. **Training target fusion** (`dataset/material_dataset.py`):
+- synthesis target combines experimental label signal + JARVIS metadata signal + geometric proxy
+- thermo target combines `formation_energy`, `ehull`, `exfoliation_energy` + proxy
+
+## 8. Stability and HER Evaluation
+`utils/geo_utils.py` provides fast screening estimators:
 - `estimate_delta_g_h`
 - `estimate_thermodynamic_stability`
 - `estimate_kinetic_stability`
 - `estimate_synthesizability`
-- `total_material_score`
 
-Proxy logic includes composition-aware and geometry-aware heuristics (TMDC-like chemistry bonus, minimum-distance penalty, complexity penalty, etc.).
+Final ranking score combines HER, thermo, kinetic, and synthesis.
 
-## 8. Training
-Command:
+## 9. Training
 ```bash
 python train.py --epochs 10
 ```
@@ -98,52 +109,49 @@ Outputs:
 - `checkpoints/property_model.pt`
 - `results/loss_curve.png`
 
-## 9. Generation & Ranking
-Command:
+## 10. Generation and Evaluation
 ```bash
 python test.py --n_generate 50 --top_k 10
 ```
 
 Outputs:
-- Top-k CIFs: `generated_structures/generated_0.cif` ... `generated_9.cif`
-- Ranking CSV: `results/top10_generated_materials.csv`
-- Figures:
-  - `results/her_performance.png`
-  - `results/stability_curve.png`
-  - `results/generated_structures.png`
+- `generated_structures/generated_0.cif` ... `generated_9.cif`
+- `results/top10_generated_materials.csv`
+- `results/her_performance.png`
+- `results/stability_curve.png`
+- `results/generated_structures.png`
 
-## 10. Evaluation Metrics
-- HER activity: `|ΔG_H|` (closer to 0 is better)
-- Thermodynamic stability score
-- Kinetic stability score
-- Synthesizability score
-- Weighted total score for ranking
+## 11. Baseline Comparison (material_generation)
+Baseline repository:
+- `https://github.com/deamean/material_generation`
 
-## 11. Results Visualization
-Required plots:
-- `loss_curve.png`: training losses
-- `her_performance.png`: ΔG_H distribution with target line at 0 eV
-- `stability_curve.png`: thermo / kinetic / synthesis trend across ranked candidates
-- `generated_structures.png`: top-10 generated 2D structure projections
+The test script can evaluate baseline CIFs with the same metric pipeline and auto-generate:
+- `results/baseline_evaluation.csv`
+- `results/baseline_comparison.csv`
+- `results/baseline_comparison.md`
 
-## 12. Comparison with Baseline
-Example format (fill with your experiment numbers):
+Current run summary:
 
-| Method | Avg HER ΔG (eV) | Stability Score | Synthesis Success Rate |
+| Method | Avg HER DeltaG (eV) | Stability Score | Synthesis Success Rate |
 |---|---:|---:|---:|
-| Baseline (Random perturbation) | 0.38 | 0.56 | 0.51 |
-| Ours (GNN Diffusion + Multi-task) | 0.21 | 0.73 | 0.69 |
+| baseline | 0.1075 | 0.9124 | 1.0000 |
+| Ours | 0.0679 | 0.8980 | 1.0000 |
 
-## 13. Innovation
-1. Conditional crystal diffusion for 2D materials with explicit HER/stability/synthesis targets.
-2. Multi-task training coupling denoising and property optimization.
-3. Practical 2D structural constraints (`z`-slab + large vacuum) during reverse sampling.
-4. End-to-end workflow from public JARVIS data to ranked CIF candidates.
+## 12. Innovation
+1. Conditional diffusion over crystal graphs with explicit HER/stability/synthesis objectives.
+2. Data-enhanced supervision for synthesis/stability using JARVIS metadata plus curated experimental 2D label set.
+3. Reverse diffusion with explicit 2D geometric constraints (`z` slab and large vacuum).
+4. Unified post-generation evaluation pipeline with automatic baseline comparison export.
 
-## 14. Limitations and Future DFT Validation
-The current implementation uses fast **surrogate/proxy predictors** for HER activity, thermodynamic stability, kinetic stability, and synthesizability. These predictors are used for high-throughput screening and engineering demonstration. Final validation requires DFT adsorption energy calculations, phonon calculations, AIMD, NEB, and experimental synthesis.
+## 13. Limitations and Required DFT Validation
+This implementation is for high-throughput screening and engineering demonstration. It combines ML predictions and surrogate/proxy scoring for HER and stability. Final validation still requires:
+- DFT adsorption energy for HER
+- phonon analysis
+- AIMD
+- NEB
+- experimental synthesis and characterization
 
-## 15. How to Run
+## 14. How to Run
 ```bash
 pip install -r requirements.txt
 python download_jarvis_2d.py
@@ -151,13 +159,12 @@ python train.py --epochs 10
 python test.py --n_generate 50 --top_k 10
 ```
 
-Quick smoke test:
+Optional baseline comparison directory:
 ```bash
-python train.py --epochs 3 --steps_per_epoch 80 --max_samples 200
-python test.py --n_generate 20 --top_k 10
+python test.py --n_generate 50 --top_k 10 --baseline_cif_dir d:/cursor_file/baseline_material_generation/generated_materials/cif_files
 ```
 
-## 16. Repository Structure
+## 15. Repository Structure
 ```text
 .
 ├── models/
@@ -170,7 +177,9 @@ python test.py --n_generate 20 --top_k 10
 │   ├── geo_utils.py
 │   └── vis.py
 ├── data/
-│   └── cif/
+│   ├── cif/
+│   ├── experimental_2d_labels.csv
+│   └── jarvis_dft_2d_metadata.csv
 ├── results/
 ├── generated_structures/
 ├── checkpoints/

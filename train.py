@@ -12,7 +12,7 @@ from tqdm import tqdm
 from dataset.material_dataset import MaterialDataset
 from models.diffusion_model import DiffusionGNN, diffusion_step
 from models.optimization import PropertyPredictor, multitask_loss
-from utils.geo_utils import proxy_targets, to_tensor_targets
+from utils.geo_utils import to_tensor_targets
 from utils.vis import plot_loss_curve
 
 
@@ -26,7 +26,8 @@ def set_seed(seed: int = 42) -> None:
 def ensure_cif_data(cif_dir: str) -> None:
     os.makedirs(cif_dir, exist_ok=True)
     cif_files = glob.glob(os.path.join(cif_dir, "*.cif"))
-    if cif_files:
+    metadata_csv = os.path.join(os.path.dirname(cif_dir), "jarvis_dft_2d_metadata.csv")
+    if cif_files and os.path.exists(metadata_csv):
         return
     from download_jarvis_2d import main as download_main
 
@@ -48,6 +49,16 @@ def train(args: argparse.Namespace) -> None:
         seed=args.seed,
         use_cache=True,
     )
+    synth_labels = []
+    for i in range(min(len(dataset), 300)):
+        tgt = dataset[i].target
+        synth_labels.append(float(tgt.get("synthesis", 0.0) >= 0.5))
+    if synth_labels:
+        print(
+            f"Dataset synthesis-positive ratio (label>=0.5): "
+            f"{sum(synth_labels) / len(synth_labels):.3f} on sampled entries"
+        )
+
     device = torch.device(args.device if torch.cuda.is_available() else "cpu")
 
     diffusion_model = DiffusionGNN(
@@ -89,12 +100,16 @@ def train(args: argparse.Namespace) -> None:
         sums = {k: 0.0 for k in history.keys()}
         pbar = tqdm(indices, desc=f"Epoch {epoch + 1}/{args.epochs}", ncols=100)
         for idx in pbar:
-            batch = dataset[idx].to(device)
-            target_proxy = proxy_targets(dataset[idx].structure)
-            target = to_tensor_targets(target_proxy, device=device)
+            sample = dataset[idx]
+            batch = sample.to(device)
+            target = to_tensor_targets(sample.target, device=device)
 
             t = torch.rand(1, device=device)
-            cond = torch.tensor([0.0, 1.0, 1.0], dtype=torch.float32, device=device)
+            cond = torch.tensor(
+                [0.0, sample.target["thermo"], sample.target["synthesis"]],
+                dtype=torch.float32,
+                device=device,
+            )
             noisy_pos, true_noise, pred_noise = diffusion_step(
                 model=diffusion_model,
                 x=batch.x,
