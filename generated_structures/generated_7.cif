@@ -1,16 +1,16 @@
 # generated using pymatgen
-data_CoO2
+data_NbTe2
 _symmetry_space_group_name_H-M   'P 1'
-_cell_length_a   2.81735000
-_cell_length_b   2.81736000
-_cell_length_c   24.55180000
+_cell_length_a   3.68234000
+_cell_length_b   3.68234000
+_cell_length_c   24.17730000
 _cell_angle_alpha   90.00000000
 _cell_angle_beta   90.00000000
 _cell_angle_gamma   120.00000000
 _symmetry_Int_Tables_number   1
-_chemical_formula_structural   CoO2
-_chemical_formula_sum   'Co1 O2'
-_cell_volume   168.77072519
+_chemical_formula_structural   NbTe2
+_chemical_formula_sum   'Nb1 Te2'
+_cell_volume   283.91360369
 _cell_formula_units_Z   1
 loop_
  _symmetry_equiv_pos_site_id
@@ -24,6 +24,6 @@ loop_
  _atom_site_fract_y
  _atom_site_fract_z
  _atom_site_occupancy
-  Co  Co1  1  0.26905000  0.92901000  0.09270000  1.0
-  O  O1  1  0.60239000  0.59568000  0.13076000  1.0
-  O  O2  1  0.93572000  0.26235000  0.05463000  1.0
+  Nb  Nb1  1  0.52387000  0.11555000  0.12601000  1.0
+  Te  Te1  1  0.19054000  0.44889000  0.20289000  1.0
+  Te  Te2  1  0.85721000  0.78222000  0.04913000  1.0
